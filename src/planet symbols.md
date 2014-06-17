@@ -6,7 +6,7 @@ b) If it appears within the text of a scholion to substitute for the word ἥλ�
 (e.g.) <choice><abbr>☉</abbr><expan>ἡλιον</expan></choice>
 
 
--When you see {urn:cite:hmt:vaimg.VA111RN-0112:0.4124,0.731,0.0296,0.0232} in the manuscript:
+-When you see {urn:cite:hmt:vaimg.VA111RN-0112@0.4124,0.731,0.0296,0.0232} in the manuscript:
 a) If it appears within the text of a scholion, it is substituting for the word (SELENE). Treat this as an abbreviation. In the "abbr" element, use the unicode character ☾(Edit->Special Characters->Miscellaneous Symbols->Last Quarter Moon).  In the “expan” element include the full word that the symbol stands for. Endings will be determined by context. It will look something like this:
 (e.g.) <choice> <abbr>☾</abbr><expan>σελήνην</expan></choice>
 
