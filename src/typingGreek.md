@@ -1,17 +1,6 @@
-# Keyboard commands #
-- command + spacebar switches between Greek and English keyboard
-- highlight a text selection + command + e allows you to wrap the highlighted selection for mark up in Oxygen 
-- command + s save
-- command + c copy
-- command + v paste
-- command + x cut
-- command + z undo
-- command + f find
+## Typing accented Greek ##
 
-
-# Typing accented Greek #
-
-## Mac OS ##
+# Mac OS #
 
 We recommend Sophokeys: <http://www.benjaminblonder.org/sophokeys/>
 
@@ -19,7 +8,7 @@ After installation a flag will appear in the top bar of your desktop near the da
 
 Sophokeys covers almost all the necessary characters for editing the *Iliad* and scholia, and is for the most part a fairly intuitive keyboard to use. Some less intuitive features include capitalization, which is done by first using *, then the character you wish to capitalize. 
 
-## Windows ##
+# Windows #
 
 To type Greek with the built-in polytonic keyboard, see these instructions: <http://www.dramata.com/Ancient%20polytonic%20Greek%20in%20Windows.pdf> 
 
