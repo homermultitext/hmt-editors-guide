@@ -6,7 +6,7 @@ In the following examples, images are linked to interactive versions of the cite
 
 ## Characters and character sequences ##
 
-diaereses on vowels with a breathing
+### diaereses on vowels with a breathing ###
 :  Use Unicode "Combining Diaeresis" character
 
 Example:  ἵ̈ει (urn:cts:greekLit:tlg0012.tlg001.msA:25)
@@ -20,7 +20,7 @@ Example:  ἵ̈ει (urn:cts:greekLit:tlg0012.tlg001.msA:25)
 
 [1embed]: urn:cite:hmt:vaimg.VA154VN-0656@0.6957,0.6739,0.038,0.0248
 
-Macra
+### Macra ###
 :  Should be indexed under 'Reading Aids'
 
 Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.70}
@@ -31,7 +31,7 @@ Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.70}
 
 [macron]: images/macron.jpg
 
-Brevia
+### Brevia ###
 : Should be indexed under 'Reading Aids'
 
 Example: ἄ̆ν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.101}
@@ -42,7 +42,7 @@ Example: ἄ̆ν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.101}
 
 [3]: urn:cite:hmt:vaimg.VA113VN-0616@0.7057,0.5462,0.029,0.0203
 
-Elisions
+### Elisions ###
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote, which is standard on an English keyboard. If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
 
 Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA:9.235}
@@ -53,7 +53,7 @@ Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA:9.235}
 
 [4]: urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
-"Floating" grave accents
+### "Floating" grave accents ###
 : Floating grave accents in the manuscript can appear on an elided syllable. 
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
@@ -66,24 +66,24 @@ Example: μετα δ`᾽ ἔσσεται
 
 [5]: urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-Critical Signs
+### Critical Signs ###
 :  receive no markup or mention in the text editions. Critical signs next to Iliadic lines have been separately indexed. Critical Signs that appear next to scholia should be documents in 'Reading Aids'. 
 
-Punctuation
+### Punctuation ###
 :  All punctuation must be accounted for. That includes where it would not make sense by our modern conventions, at the end of lines, at the end of lemmata etc. See [difficult to type characters](pasteboard.html) for any unicode characters you are unable to generate.
 
 ## Orthography ##
 
-accentuation and breathings
+### accentuation and breathings ###
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
 
-iota
+### iota ###
 : Iotas are consistently written adscript in most of our manuscripts: we write them subscript where that is usual in modern practice without implying that the manuscript does so.
 
 Example: ἐγκλισίῃσι {urn:cts:greekLit:tlg0012.tlg001.msA:12.1}
 !{example}[urn:cite:hmt:vaimg.VA154VN-0656@0.5906,0.2194,0.1181,0.0278]
 
-ligatures and variant letter forms
+### ligatures and variant letter forms ###
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions because they are unambiguous. 
 
 
@@ -91,17 +91,17 @@ ligatures and variant letter forms
 
 ### Named entities (proper nouns and adjectives) ###
 
-personal names
+#### personal names ####
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
     <persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>
 
-place names
+#### place names ####
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
 
     <placeName n="urn:cite:hmt:place.place185">Σπάρτη</placeName> 
 
-ethnic adjectives
+#### ethnic adjectives ####
 :  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or from [reference table for personal names][pers]. 
 
     <rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>
@@ -109,14 +109,14 @@ ethnic adjectives
 
 Ethnic adjectives can be linked either to a geographic location or an eponymous ancestor. In instances where both exist, preference is given to the geographic location. For example, Trojans are linked to Troy not Tros. 
 
-geographic adjectives
+#### geographic adjectives ####
 : Use TEI `rs` element.  Include a `@type` attribute with value `geographic`, and `@n` attribute with an identifier from the  [reference table for place names][place].
 
 For instances when a non-ethnic group is described using a geographic adjective, such as Pramnian wine.
 
     <rs type="geographic" n="urn:cite:hmt:place.place309">Ἀλήϊον</rs>
 
-personal adjectives
+#### personal adjectives ####
 :  Use TEI `rs` element.  Include a `@type` attribute with value `personal`, and `@n` attribute with an identifier from the  [reference table for personal names][pers].
 
 For instances when an adjectival form of personal name is used, such as Aristarchean.
@@ -127,21 +127,21 @@ For instances when an adjectival form of personal name is used, such as Aristarc
 
 ### Other special content types ###
 
-"word-as-word" 
+#### "word-as-word" ####
 
 meaning that the content should not be considerable parsable Greek. For instance a scholion might talk about the spelling of a word and whether certain letters should or should not be present. These are not parsable strings. They are often written with horizontal bars or curves above them, but not always
 :  Use TEI `rs` element, with `@type` attribute = `waw`.
 
     <rs type="waw">ε</rs>
 
-citable quotes
+#### citable quotes ####
 : Use TEI `cit`, `ref` with `@type="urn"`, and `q` elements
 
     <cit><ref>urn:cts:greekLit:tlg0012.tlg001:12.25</ref><q>ἐννῆμαρ δ' ἐς τεῖχος ἵ̈ει ῥόον</q></cit>
 
 The quote is wrapped in `q`, then `cit`. A `ref` element is place within the `cit` but outside the `q`. The `ref` element contains a full urn for the cited passage. You do not use `cit` when your quoting from the passage commented on by the scholion (e.g. if your scholion talks about line 12 and quotes it, you do not cite line 12 in markup).
 
-quoted strings or uncitable quotes
+#### quoted strings or uncitable quotes ####
 
 The scribe may be offering an alternative reading or quoting a work we do not have a URN citation for.
 
@@ -149,13 +149,13 @@ The scribe may be offering an alternative reading or quoting a work we do not ha
  
     <q>οὐδὲ διαπρὸ</q>
 
-titles
+#### titles ####
 :  If the title refers to a known, citable work, use TEI `ref` with @type="urn" and @n attribute with a full URN for the work
 - Use TEI `title` element (wrapping `ref` if that is given)
 
      <title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>
 
-numbers
+#### numbers ####
 : Use TEI `num` with `@value` attribute.
 
     <num value="2">β</num>
@@ -164,7 +164,7 @@ Numbers are often written with bars over them link this: !{number 2}[urn:cite:hm
 
 You must distinguish whether it is a "word-as-word" or number form the context.
 
-##Editorial status##
+## Editorial status ##
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
 
@@ -177,10 +177,10 @@ While readers always take many kinds of contextual information into consideratio
 7. *alternative readings*. The scribe has offered an alternative reading, visually distinct from any scholia hand.
 8. *corrections*. The scribe has corrected something in the text either by crossing it out or writing over it.
 
-Clear readings
+### Clear readings ###
 : Enter the text with no additional markup
 
-Unclear readings
+### Unclear readings ###
 : Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element.
 
 Example:
@@ -193,22 +193,21 @@ Example:
 
 [unclear]: images/unclear.jpg
 
-
-Missing
+### Missing ###
 :  Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for example, "letters" or "words"), and `@extent`  to indicate how many units are likely included in the gap.
 
 Example:
 
     <gap unit="letters" extent="3"/>
 
-Partially Preserved Readings
+### Partially Preserved Readings ###
 :  Use TEI `damage` element and `choice` element, with the diplomatic transcription in `unclear` and regularized transcription in `reg`.
 
 !{Example}[urn:cite:hmt:e3bifolio.E3_136v_137r@0.0891,0.1532,0.3734,0.0435]
 
     <damage><choice><reg>ὡς</reg><unclear>ως</unclear></choice></damage>
                                     
-Text deleted by original scribe
+### Text deleted by scribe ###
 : Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
 
 Example
@@ -221,7 +220,7 @@ Example
 
 [102]: urn:cite:hmt:vaimg.VA054RN-0055@0.3682,0.1297,0.0301,0.0113
 
-Added text above line
+### Added text above line ###
 : Use TEI `add` element, including `@place` attribute with value `supralinear`
 
 Example:
@@ -235,7 +234,7 @@ Example:
 [added]: images/added.jpg
 
 
-Alternate readings offered above the line
+### Alternate readings offered above the line ###
 : Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading, distinct from the scholia hand (therefore not including glosses or elided letters); group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
 Example 
@@ -250,7 +249,7 @@ Example
 
 [104]: urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
 
-Scribal corrections
+### Scribal corrections ###
 : Use TEI `corr/sic` pair for when the scribe corrects a reading in the text. This might be a change in accent or spelling; group the pair in a TEI `choice` element.  
 
 Example: accent corrected by the original scribe
@@ -267,7 +266,7 @@ Example: accent corrected by the original scribe
 
 Abbreviations are noted only where they are ambiguous. Morphological endings are expanded without comment because they are unambiguous, as are certain symbols.
 
-Regular terminating syllables
+### Regular terminating syllables ###
 : Regular terminating syllables (often morphological endings) are treated as a variant letter form, and are not specially marked in any way
 
 Example:
@@ -279,7 +278,7 @@ Example:
 
 [os]: images/os.jpg
 
-καί and ὅτι
+### καί and ὅτι ###
 : Regular abbreviated forms of the whole words καί and ὅτι are treated as variant letter forms, and are not specially marked in any way
 
 Examples:
@@ -296,8 +295,7 @@ Examples:
 
 [108]: urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
 
-
-Ambiguous abbreviations
+### Ambiguous abbreviations ###
 : Use the TEI `abbr/expan` pair, wrapped in `choice`. The `expan` form can include all correct accents and breathings because it is not the diplomatic version of the text.
 
 Example
