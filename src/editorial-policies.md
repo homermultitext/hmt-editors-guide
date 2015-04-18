@@ -38,14 +38,12 @@ Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.70}
 brevia
 : Use Unicode "Combining Breve" character
 
-Example: ἄ̆ν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.101}
-
+::brevefloat::
 
 [![breve][breve]][3]
 
 [breve]: images/breve.jpg
 
-[3]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113VN-0616@0.7057,0.5462,0.029,0.0203
 
 
 
