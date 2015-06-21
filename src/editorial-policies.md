@@ -50,7 +50,7 @@ brevia
 elisions
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
 
-Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.235}
+Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA:9.235}
 
 
 [![elision][elision]][4]
