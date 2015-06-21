@@ -45,8 +45,6 @@ brevia
 [breve]: images/breve.jpg
 
 
-
-
 elisions
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
 
@@ -102,10 +100,15 @@ ligatures and variant letter forms
 personal names
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
-
 Example
     
     <persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>
+
+note 1: in cases where more than one person is refered to, such as the Atreidai, you double wrap personal names
+
+Example
+
+    <persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>
 
 place names
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
@@ -118,21 +121,28 @@ Example
 
 
 ethnic adjectives
-:  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place].
+:  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
 
+Example
 
     <rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>
 
+note: Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
 
+astronomical bodies
+:   Use TEI `rs` element.   Include a `@type` attribute with value `astro`, and `@n` attribute with an identifer from the [reference table for astronomical bodies][astro].
 
+Example
 
+    <rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>
+    
+
+[astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
+
+untagged proper names
+:   While it is tempting to tag all proper names, there are other names capitalized in our editions that we do not tagged as named entities because they are too vague or don't fit our categories. Among them include: the Muses, Gorgons, Centaurs, Giants, Myrmidons, the Scaean Gate, and adjectival forms of people's names (ergo, we can tag 'Homer' but not 'Homeric'). We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
 
 ###Other special content types ###
-
-
-"word-as-word"
-:  Use TEI `rs` element, with `@type` attribute = `waw`.
-
 
 titles
 :  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
@@ -147,14 +157,8 @@ numbers
 
 
     <num value="1">α</num>
-
-
-
-quoted strings
-: Use TEI `rs` element with `@type` attribute = `waw` ("word-as-word")
- 
-
-    <rs type="waw">ε</rs>
+    
+note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
 
 
 ##Editorial status##
@@ -263,6 +267,13 @@ Example: accent corrected by the original scribe
 
 [105]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
 
+Other content with `choice`
+: When you have to include additional mark up (e.g. a personal name) on text that is wrapped in `choice`, put the additional mark up around `choice`.
+
+Example
+
+    <persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr>Ἀρίσταρχος<expan></expan></choice></persName>
+
 ## Abbreviations
 
 Regular terminating syllables
@@ -328,7 +339,7 @@ Example
 
 
 unidentified quoted phrases
-:  Use TEI `q` for quoted phrases or passages from unidentified sources
+:  Use TEI `q` for quoted phrases or passages from unidentified sources. This is for one or more parsable Greek words.
 
 Example 
 
@@ -336,8 +347,9 @@ Example
 
 
 identifiable quotations
-: Use TEI `q/ref` pair wrapped in a `cit` element.  
+: Use TEI `q/ref` pair wrapped in a `cit` element.  On `ref` element use `@type` attribute =`urn`. Inside `ref` element give the full cts urn for the quote.
 
+Example
 
     <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:17.453</ref><q>ἔτι γάρ σφισι κῦδος ὀρέξω</q></cit>
 
@@ -348,22 +360,27 @@ identifiable quotations
 
 [111]:  http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
 
+quoted strings
+: Use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). This is for string of letters that are not parsable as Greek words.
+
+Example
+
+    <rs type="waw">ε</rs>
+
 ## Appendix:  other references ##
 
 
 Reference table for identifiers for personal names: 
-[https://www.google.com/fusiontables/DataSource?docid=1fcfeXQWcChl-EiSt9vNHMfXYGSM3ETn5ZwTKF0Y#rows:id=1][pers]
-
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/hmtnames.csv][pers]
 
 Reference table for identifiers for place names:
-[https://www.google.com/fusiontables/DataSource?docid=1M7FKJjXaK4WQVL85zhi30TsWHeF-XSMVfQ3bYz8#rows:id=1][place]
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/hmtplaces.csv][place]
+
+Reference table for identifiers for astronomical bodies:
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv][astro]
 
 
 
 [pers]: https://www.google.com/fusiontables/DataSource?docid=1fcfeXQWcChl-EiSt9vNHMfXYGSM3ETn5ZwTKF0Y#rows:id=1
-
-
-
-
 
 [place]: https://www.google.com/fusiontables/DataSource?docid=1M7FKJjXaK4WQVL85zhi30TsWHeF-XSMVfQ3bYz8#rows:id=1
