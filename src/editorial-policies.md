@@ -11,7 +11,7 @@ In the following examples, images are linked to interactive versions of the cite
 diaereses on vowels with breathing and/or accent
 :  Use Unicode "Combining Diaeresis" character
 
-Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.352)
+Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [![diaresis][diaeresis]][1]
 
@@ -27,7 +27,7 @@ Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.352)
 macra
 :  Use Unicode "Combining Macron" character.
 
-Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.70}
+Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA:9.70}
 
 [![macron][macron]][2]
 
@@ -66,7 +66,7 @@ Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.235}
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
 Example: μετα δ`᾽ ἔσσεται 
-{urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.131}
+{urn:cts:greekLit:tlg0012.tlg001.msA:9.131}
 
 !["floating" accent][float][5]
 
