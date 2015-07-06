@@ -14,7 +14,7 @@ In the following examples, images are linked to interactive versions of the cite
 
 [![diaresis][diaeresis]][1]
 
-Example:  ̈ίσχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
+Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
 
@@ -76,84 +76,81 @@ Example: μετα δ`᾽ ἔσσεται
 
 ## Orthography ##
 
-accentuation and breathings
+**accentuation and breathings**
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
 
-iota
+**iota**
 : Iotas are consistently written adscript in most of our manuscripts: we write them subscript where that is usual in modern practice without implying that the manuscript does so.
 
-ligatures and variant letter forms
+**ligatures and variant letter forms**
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. 
 
 
 ## Distinct content types ##
 
-
-
 ### Named entities (proper nouns and adjectives) ###
 
 
-
-personal names
+**personal names**
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
-Example
+Example:
     
-    <persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>
+`<persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>`
 
 note 1: in cases where more than one person is refered to, such as the Atreidai, you double wrap personal names
 
-Example
+Example:
 
-    <persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>
+`<persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>`
 
-place names
+**place names**
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
 
 
-Example
+Example:
 
 
-    <placeName n="urn:cite:hmt:place.place185">Σπάρτη</placeName> 
+`<placeName n="urn:cite:hmt:place.place185">Σπάρτη</placeName>`
 
 
-ethnic adjectives
+**ethnic adjectives**
 :  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
 
-Example
+Example:
 
-    <rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>
+`<rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>`
 
 note: Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
 
-astronomical bodies
+**astronomical bodies**
 :   Use TEI `rs` element.   Include a `@type` attribute with value `astro`, and `@n` attribute with an identifer from the [reference table for astronomical bodies][astro].
 
-Example
+Example:
 
-    <rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>
+`<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
     
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
-untagged proper names
+**untagged proper names**
 :   While it is tempting to tag all proper names, there are other names capitalized in our editions that we do not tagged as named entities because they are too vague or don't fit our categories. Among them include: the Muses, Gorgons, Centaurs, Giants, Myrmidons, the Scaean Gate, and adjectival forms of people's names (ergo, we can tag 'Homer' but not 'Homeric'). We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
 
 ###Other special content types ###
 
-titles
+**titles**
 :  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
 - Use TEI `title` element (wrapping `ref` if that is given)
 
 
-     <title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>
+`<title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>`
 
 
-numbers
+**numbers**
 : Use TEI `num` with `@value` attribute.
 
 
-    <num value="1">α</num>
+`<num value="1">α</num>`
     
 note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
 
@@ -169,42 +166,43 @@ While readers always take many kinds of contextual information into consideratio
 
 
 
-Clear readings
+**Clear readings**
 : Enter the text with no additional markup
 
-Unclear readings
+**Unclear readings**
 : Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element.
-
-
-Example:
-
-    <w>γ<unclear>ὰ</unclear>ρ</w>
-
 
 [![unclear][unclear]][100]
 
-[100]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
+Example:
+
+`<w>γ<unclear>ὰ</unclear>ρ</w>`
 
 
-[unclear]: images/unclear.jpg
 
 
-Missing
+[100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
+
+
+[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=8000&CVT=JPEG
+
+
+**Missing**
 :  Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for example, "letters" or "words"), and `@extent`  to indicate how many units are likely included in the gap.
 
 Example:
 
-    <gap unit="letters" extent="3"/>
+`<gap unit="letters" extent="3"/>`
 
 
 
 
-Text deleted by original scribe
+**Text deleted by original scribe**
 : Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
 
 Example
 
-    <del>ἢ τοὺς ἑξῆς τρεῖς</del>
+`<del>ἢ τοὺς ἑξῆς τρεῖς</del>`
 
 
 
@@ -221,7 +219,7 @@ Example:
 
 
 
-    <w>ἔνι<add place="supralinear">οι</add></w>
+`<w>ἔνι<add place="supralinear">οι</add></w>`
 
 [![added text][added]][103]
 
@@ -235,7 +233,7 @@ Alternate readings offered above the line
 
 Example 
 
-    <choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>
+`<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>`
 
 
 [![alternative text][alt]][104]
@@ -254,7 +252,7 @@ Scribal corrections
 
 Example: accent corrected by the original scribe
 
-    <choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>
+`<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>`
 
 
 [![correction][corr]][105]
@@ -269,7 +267,7 @@ Other content with `choice`
 
 Example
 
-    <persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr>Ἀρίσταρχος<expan></expan></choice></persName>
+`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr>Ἀρίσταρχος<expan></expan></choice></persName>`
 
 ## Abbreviations
 
