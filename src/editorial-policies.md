@@ -8,13 +8,13 @@ In the following examples, images are linked to interactive versions of the cite
 
 ## Characters and character sequences ##
 
-diaereses on vowels with breathing and/or accent
+**diaereses** on vowels with breathing and/or accent
 
 :  Use Unicode "Combining Diaeresis" character
 
 [![diaresis][diaeresis]][1]
 
-Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
+Example:  ̈ίσχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
 
@@ -24,16 +24,18 @@ Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 
 
-macra
+**macra**
 :  Use Unicode "Combining Macron" character.
-
-Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA:9.70}
 
 [![macron][macron]][2]
 
-[2]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
+Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA:9.70}
 
-[macron]: images/macron.jpg
+
+
+[2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
+
+[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
 
 brevia
 : Use Unicode "Combining Breve" character
