@@ -29,57 +29,52 @@ Example:  ̈ίσχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [![macron][macron]][2]
 
-Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA:9.70}
-
+Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 
 [2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
 
 [macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
 
-brevia
+**brevia**
 : Use Unicode "Combining Breve" character
-
-::brevefloat::
 
 [![breve][breve]][3]
 
-[breve]: images/breve.jpg
+Example: ̆ἄντ (urn:cts:greekLit:tlg0012.tlg001.msA:9.101)
+
+[breve]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113VN-0616.tif&RGN=0.7057,0.5462,0.029,0.0203&WID=8000&CVT=JPEG
+
+[3]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113VN-0616@0.7057,0.5462,0.029,0.0203
 
 
-elisions
+**elisions**
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
-
-Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA:9.235}
-
 
 [![elision][elision]][4]
 
-[elision]: images/elision.jpg
+Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
-[4]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
+[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=8000&CVT=JPEG
+
+[4]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
 
 
-"floating" grave accents
+**"floating" grave accents**
 : Floating grave accents in the manuscript can appear on an elided syllable. 
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
-Example: μετα δ`᾽ ἔσσεται 
-{urn:cts:greekLit:tlg0012.tlg001.msA:9.131}
-
 !["floating" accent][float][5]
 
-[float]: images/float.jpg
+Example: μετα δ`᾽ ἔσσεται 
+(urn:cts:greekLit:tlg0012.tlg001.msA:9.131)
 
-[5]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
+[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=8000&CVT=JPEG
 
+[5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-
-
-## Orthography
-
-
+## Orthography ##
 
 accentuation and breathings
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
