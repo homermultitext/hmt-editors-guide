@@ -200,17 +200,15 @@ Example:
 **Text deleted by original scribe**
 : Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
 
-Example
-
-`<del>ἢ τοὺς ἑξῆς τρεῖς</del>`
-
-
-
 [![deletion][deletion]][102]
 
-[deletion]: images/deletion.jpg
+Example:
 
-[102]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA054RN-0055@0.3682,0.1297,0.0301,0.0113
+`<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>` (urn:cts:greekLit:tlg5026.msA.hmt:9.193)
+
+[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=8000&CVT=JPEG
+
+[102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
 Added text above line
 : Use TEI `add` element, including `@place` attribute with value `supralinear`
