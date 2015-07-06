@@ -9,12 +9,12 @@ In the following examples, images are linked to interactive versions of the cite
 ## Characters and character sequences ##
 
 diaereses on vowels with breathing and/or accent
-:  Use Unicode "Combining Diaeresis" character
 
-Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
+:  Use Unicode "Combining Diaeresis" character
 
 [![diaresis][diaeresis]][1]
 
+Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
 
