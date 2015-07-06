@@ -16,7 +16,7 @@ Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 [![diaresis][diaeresis]][1]
 
 
-[diaeresis]: images/diaeresis.jpg
+[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
 
 [1]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
 
