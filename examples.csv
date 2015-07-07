@@ -13,7 +13,7 @@ delete,"urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027",urn:cts:greekL
 add,"urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021",urn:cts:greekLit:tlg5026.msA.hmt:4.9,"<w>ἔνι<add place='supralinear'>οι</add></w>",
 origreg,"urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293",urn:cts:greekLit:tlg0012.tlg001.msA:4.351,"<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>",
 siccorr,"urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308",urn:cts:greekLit:tlg0012.tlg001.msA:4.337,"<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>",
-morph,"urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159",urn:cts:greekLit:tlg5026.msA.hmt:4.478,εἰκος,"<choice><abbr>εἰκο</abbr><expan>εἰκος</expan></choice>",
+morph,"urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159",urn:cts:greekLit:tlg5026.msA.hmt:4.478,εἰκος,"<choice><abbr>εἰκο</abbr><expan>εἰκος</expan></choice>"
 kai,"urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137",urn:cts:greekLit:tlg5026.msA.hmt:4.437,καί, 
 oti,"urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158",urn:cts:greekLit:tlg5026.msA.hmt:4.8,ὅτι, 
 outos,"urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135",urn:cts:greekLit:tlg5026.msA.hmt:4.495,"<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>",οὑτῶς
