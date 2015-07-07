@@ -236,120 +236,132 @@ Example:
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
-Added text above line
+**Added text above line**
+
 : Use TEI `add` element, including `@place` attribute with value `supralinear`
-
-Example:
-
-
-
-`<w>ἔνι<add place="supralinear">οι</add></w>`
 
 [![added text][added]][103]
 
-[103]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
+Example:
 
-[added]: images/added.jpg
+`<w>ἔνι<add place="supralinear">οι</add></w>`
 
 
-Alternate readings offered above the line
+
+[103]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
+
+[added]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5045,0.7325,0.031,0.021&WID=8000&CVT=JPEG
+
+
+**Alternate readings offered above the line**
+
 : Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
-Example 
+Example:
 
 `<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.351)
 
 
 [![alternative text][alt]][104]
 
-[alt]: images/alt.jpg
+[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=8000&CVT=JPEG
 
 
-[104]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
+[104]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
 
 
 
-Scribal corrections
+**Scribal corrections**
+
 : Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
 
+[![correction][corr]][105]
 
 
 Example: accent corrected by the original scribe
 
 `<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>`
 
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.337)
 
-[![correction][corr]][105]
+[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=8000&CVT=JPEG
 
+[105]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
 
-[corr]: images/corr.jpg
+## Abbreviations ##
 
-[105]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
+###Abbreviations without mark up###
 
-Other content with `choice`
-: When you have to include additional mark up (e.g. a personal name) on text that is wrapped in `choice`, put the additional mark up around `choice`.
+**Regular terminating syllables**
 
-Example
-
-`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr>Ἀρίσταρχος<expan></expan></choice></persName>`
-
-## Abbreviations
-
-Regular terminating syllables
-: Regular terminating syllables (often morphological endings) are treated as a variant letter form, and are not specially marked in any way
-
-Example:
-
-εἰκος, where a raised omicron is a brief writing for the morphological ending -ος
-
+: Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the paleography guide if you are unfamiliar with the common abbreviations.
 
 [![Abbreviate -os][os]][106]
 
-[106]:  http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159
+Example:
 
-[os]: images/os.jpg
+εἰκος, where a raised omicron is a brief writing for the morphological ending -ος (urn:cts:greekLit:tlg5026.msA.hmt:4.478)
 
-καί and ὅτι
-: Regular abbreviated forms of the whole words καί and ὅτι are treated as variant letter forms, and are not specially marked in any way
+[106]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159
+
+[os]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.7755,0.4663,0.0263,0.0159&WID=8000&CVT=JPEG
+
+**Symbol Abbreviations** 
+
+: Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
 
 Examples:
 
 [![καί][kai]][107]
 
+(urn:cts:greekLit:tlg5026.msA.hmt:4.437)
 
 [![oti][oti]][108]
 
-[oti]: images/oti.jpg
+(urn:cts:greekLit:tlg5026.msA.hmt:4.8)
 
-[kai]: images/kai.jpg
+[oti]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.6517,0.4711,0.02,0.0158&WID=8000&CVT=JPEG
 
-[107]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137
+[kai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA056RN-0057.tif&RGN=0.621,0.5696,0.0152,0.0137&WID=8000&CVT=JPEG
 
-[108]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
+[107]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137
 
-
-Other abbreviations
-: Use the TEI `abbr/expan` pair, wrapped in `choice`
-
-Example
+[108]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
 
 
-        <choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>
+### Abbreviations that Require Mark up ###
+
+**paleographically ambiguous abbreviations**
+
+: Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
+
+- Use the TEI `abbr/expan` pair, wrapped in `choice`
 
 [![abbreviation][houtos]][109]
 
-[109]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135
+Example: 
 
-[houtos]: images/houtos.jpg
+`<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>`
 
+(urn:cts:greekLit:tlg5026.msA.hmt:4.495)
 
-    <choice><abbr>περ</abbr><expan>πάτερ</expan></choice>
+[109]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135
+
+[houtos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.453,0.7399,0.0224,0.0135&WID=8000&CVT=JPEG
 
 [![abbr][pater]][110]
 
-[pater]: images/pater.jpg
+Example:
 
-[110]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
+`<choice><abbr>περ</abbr><expan>πάτερ</expan></choice>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.288)
+
+[pater]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.3183,0.293,0.045,0.024&WID=8000&CVT=JPEG
+
+[110]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
 
 
 
