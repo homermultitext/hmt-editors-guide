@@ -5,7 +5,6 @@ The Homer Multitext project is creating  *digital, diplomatic editions* of Homer
 
 In the following examples, images are linked to interactive versions of the cited visual evidence.
 
-
 ## Characters and character sequences ##
 
 **diaereses** on vowels with breathing and/or accent
@@ -25,6 +24,7 @@ Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 
 **macra**
+
 :  Use Unicode "Combining Macron" character.
 
 [![macron][macron]][2]
@@ -37,6 +37,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 [macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
 
 **brevia**
+
 : Use Unicode "Combining Breve" character
 
 [![breve][breve]][3]
@@ -49,6 +50,7 @@ Example: ̆ἄντ (urn:cts:greekLit:tlg0012.tlg001.msA:9.101)
 
 
 **elisions**
+
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
 
 [![elision][elision]][4]
@@ -62,6 +64,7 @@ Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
 
 **"floating" grave accents**
+
 : Floating grave accents in the manuscript can appear on an elided syllable. 
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
@@ -82,6 +85,16 @@ Example: μετα δ`᾽ ἔσσεται
 **iota**
 : Iotas are consistently written adscript in most of our manuscripts: we write them subscript where that is usual in modern practice without implying that the manuscript does so.
 
+Example:
+
+[![iota subscript][subscript]][200]
+
+[200]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.501,0.2434,0.058,0.027
+
+[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG 
+
+καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
+
 **ligatures and variant letter forms**
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. 
 
@@ -92,6 +105,7 @@ Example: μετα δ`᾽ ἔσσεται
 
 
 **personal names**
+
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
 Example:
@@ -105,6 +119,7 @@ Example:
 `<persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>`
 
 **place names**
+
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
 
 
@@ -115,6 +130,7 @@ Example:
 
 
 **ethnic adjectives**
+
 :  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
 
 Example:
@@ -124,6 +140,7 @@ Example:
 note: Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
 
 **astronomical bodies**
+
 :   Use TEI `rs` element.   Include a `@type` attribute with value `astro`, and `@n` attribute with an identifer from the [reference table for astronomical bodies][astro].
 
 Example:
@@ -134,11 +151,13 @@ Example:
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
 **untagged proper names**
+
 :   While it is tempting to tag all proper names, there are other names capitalized in our editions that we do not tagged as named entities because they are too vague or don't fit our categories. Among them include: the Muses, Gorgons, Centaurs, Giants, Myrmidons, the Scaean Gate, and adjectival forms of people's names (ergo, we can tag 'Homer' but not 'Homeric'). We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
 
 ###Other special content types ###
 
 **titles**
+
 :  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
 - Use TEI `title` element (wrapping `ref` if that is given)
 
@@ -147,6 +166,7 @@ Example:
 
 
 **numbers**
+
 : Use TEI `num` with `@value` attribute.
 
 
@@ -359,6 +379,19 @@ quoted strings
 Example
 
     <rs type="waw">ε</rs>
+
+## Multiple types of Mark up Required ##
+
+We have three major categories of mark up in our XML documents:
+- Structural: this is already handled in your template files (i.e. organizing things by book, etc.)
+- Editorial Status: things like abbreviations, whether the text is readable, etc.
+- Content Judgments: indications of numbers, titles, named entities, etc.
+
+In cases where you have mark up for both editorial status and content judgments (e.g. an abbreviation personal name), you will do the editorial status first, then wrap it in the mark up for content.
+
+Example:
+
+`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr><expan>Ἀρίσταρχος</expan></choice></persName>` 
 
 ## Appendix:  other references ##
 
