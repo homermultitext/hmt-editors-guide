@@ -469,7 +469,7 @@ Example:
 
 We have three major categories of mark up in our XML documents:
 - Structural: this is already handled in your template files (i.e. organizing things by book, etc.)
-- Special Conten: indications of numbers, titles, named entities, etc.
+- Special Content: indications of numbers, titles, named entities, etc.
 - Editorial Status: things like abbreviations, whether the text is readable, etc.
 
 
