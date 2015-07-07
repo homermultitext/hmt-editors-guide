@@ -439,8 +439,14 @@ Reference table for identifiers for place names:
 Reference table for identifiers for astronomical bodies:
 [https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv][astro]
 
+Paleography Guide to the Venetus A:
+
+[http://homermultitext.github.io/hmt-docs/palguide.pdf][paleo]
+
 
 
 [pers]: https://www.google.com/fusiontables/DataSource?docid=1fcfeXQWcChl-EiSt9vNHMfXYGSM3ETn5ZwTKF0Y#rows:id=1
 
 [place]: https://www.google.com/fusiontables/DataSource?docid=1M7FKJjXaK4WQVL85zhi30TsWHeF-XSMVfQ3bYz8#rows:id=1
+
+[paleo]: http://homermultitext.github.io/hmt-docs/palguide.pdf
