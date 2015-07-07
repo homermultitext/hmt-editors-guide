@@ -440,7 +440,6 @@ Reference table for identifiers for astronomical bodies:
 [https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv][astro]
 
 Paleography Guide to the Venetus A:
-
 [http://homermultitext.github.io/hmt-docs/palguide.pdf][paleo]
 
 
