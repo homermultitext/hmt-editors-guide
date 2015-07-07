@@ -23,3 +23,5 @@ atreidai,"urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263",urn:cts:g
 argos,"urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293",urn:cts:greekLit:tlg0012.tlg001.msA:1.30,"<placeName n='urn:cite:hmt:place.place114'>Ἄργεϊ</placeName>",
 achaious,"urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027",urn:cts:greekLit:tlg0012.tlg001.msA:1.61,"<rs type='ethnic' n='urn:cite:hmt:place.place96'>Ἀχαιούς</rs>",
 orion,"urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323",urn:cts:greekLit:tlg0012.tlg001.msA:18.486,"<rs type='astro' n='urn:cite:hmt:astro.1'>Ὠρίωνος</rs>",
+odyssey,"urn:cite:hmt:vaimg.VA012RN-0013@0.6086,0.2072,0.037,0.0203",urn:cts:greekLit:tlg5026.msA.hmt:1.4,"<title><ref type='urn' n='urn:cts:greekLit:tlg0012.tlg002'>Οδυσσεία</ref></title>",
+number,"urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195",urn:cts:greekLit:tlg5026.msA.hmt:1.42,"<num value='50'>ν</num>",
