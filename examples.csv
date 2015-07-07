@@ -18,3 +18,8 @@ kai,"urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137",urn:cts:greekLi
 oti,"urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158",urn:cts:greekLit:tlg5026.msA.hmt:4.8,ὅτι, 
 outos,"urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135",urn:cts:greekLit:tlg5026.msA.hmt:4.495,"<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>",οὑτῶς
 pater,"urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024",urn:cts:greekLit:tlg0012.tlg001.msA:4.288,"<choice><abbr>περ</abbr><expan>πάτερ</expan></choice>",πάτερ
+achilles,"urn:cite:hmt:vaimg.VA013RN-0014@0.488,0.2915,0.063,0.0263",urn:cts:greekLit:tlg0012.tlg001.msA:1.58,"<persName n='urn:cite:hmt:pers.pers1'>Ἀχιλλεύς</persName>",
+atreidai,"urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263",urn:cts:greekLit:tlg0012.tlg001.msA:1.17,"<persName n='urn:cite:hmt:pers.pers22'><persName n='urn:cite:hmt:pers.pers119'>Ἀτρεΐδαι</persName></persName>",
+argos,"urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293",urn:cts:greekLit:tlg0012.tlg001.msA:1.30,"<placeName n='urn:cite:hmt:place.place114'>Ἄργεϊ</placeName>",
+achaious,"urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027",urn:cts:greekLit:tlg0012.tlg001.msA:1.61,"<rs type="ethnic" n='urn:cite:hmt:place.place96'>Ἀχαιούς</rs>",
+orion,"urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323",urn:cts:greekLit:tlg0012.tlg001.msA:18.486,"<rs type="astro" n='urn:cite:hmt:astro.1'>Ὠρίωνος</rs>",
