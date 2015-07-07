@@ -108,47 +108,84 @@ Example:
 
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
+[![Achilles][Achilles]][500]
+
 Example:
     
-`<persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>`
+`<persName n="urn:cite:hmt:pers.pers1">Ἀχιλλεύς</persName>`
 
-note 1: in cases where more than one person is refered to, such as the Atreidai, you double wrap personal names
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.58)
+
+[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=8000&CVT=JPEG
+
+[500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.488,0.2915,0.063,0.0263
+
+- Note in cases where more than one person is refered to, such as the Atreidai, you double wrap personal names
+
+[![Atreidai][Atreidai]][501]
 
 Example:
 
 `<persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>`
 
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.17)
+
+[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=8000&CVT=JPEG
+
+[501]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263
+
 **place names**
 
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
 
+[![Argos][Argos]][503]
 
 Example:
 
+`<placeName n="urn:cite:hmt:place.place114">Ἄργεϊ</placeName>`
 
-`<placeName n="urn:cite:hmt:place.place185">Σπάρτη</placeName>`
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.30)
+
+[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=8000&CVT=JPEG
+
+[503]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293
 
 
 **ethnic adjectives**
 
 :  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
 
+[![Achaious][Achaious]][504]
+
 Example:
 
-`<rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>`
+`<rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιούς</rs>`
 
-note: Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.61)
+
+- Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
+
+[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=8000&CVT=JPEG
+
+[504]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027
 
 **astronomical bodies**
 
 :   Use TEI `rs` element.   Include a `@type` attribute with value `astro`, and `@n` attribute with an identifer from the [reference table for astronomical bodies][astro].
 
+[![Orion][Orion]][505]
+
 Example:
 
 `<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
-    
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)    
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
+
+[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=8000&CVT=JPEG
+
+[505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323
 
 **untagged proper names**
 
@@ -255,6 +292,8 @@ Example:
 
 `<w>γ<unclear>ὰ</unclear>ρ</w>`
 
+(urn:cts:greekLit:tlg5026.msA.hmt:8.132)
+
 
 [100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
 
@@ -295,7 +334,7 @@ Example:
 
 `<w>ἔνι<add place="supralinear">οι</add></w>`
 
-
+(urn:cts:greekLit:tlg5026.msA.hmt:4.9)
 
 [103]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
 
