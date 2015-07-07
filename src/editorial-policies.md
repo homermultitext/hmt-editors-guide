@@ -159,10 +159,13 @@ Example:
 **titles**
 
 :  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
-- Use TEI `title` element (wrapping `ref` if that is given)
+- Use TEI `title` element (wrapping `ref` if that is given). `ref` is not necessary if it is a work or portion of a work we do not have a URN for.
 
+Example: 
 
 `<title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>`
+
+- Note that book numbers are considered titles, as are common names for books or portions of books (e.g. the Catalog refering to the Catalog of Ships in Book 2).
 
 
 **numbers**
@@ -180,25 +183,28 @@ note: Remember that Dindorf and Erbse will typically take a Milesian numeral and
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
 
 1. *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
-2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read.
-3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present.
+2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
+3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
 
+[hole]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA044VN-0546@0.24,0.7506,0.065,0.0729
 
+[fading]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.7808,0.0916,0.1251,0.2297
 
+[uv]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RUVD-0895@0.577,0.1367,0.248,0.4636
 
 **Clear readings**
+
 : Enter the text with no additional markup
 
 **Unclear readings**
-: Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element.
+
+: Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
 
 [![unclear][unclear]][100]
 
 Example:
 
 `<w>γ<unclear>ὰ</unclear>ρ</w>`
-
-
 
 
 [100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
