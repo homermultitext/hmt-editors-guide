@@ -5,156 +5,276 @@ The Homer Multitext project is creating  *digital, diplomatic editions* of Homer
 
 In the following examples, images are linked to interactive versions of the cited visual evidence.
 
-
 ## Characters and character sequences ##
 
-diaereses on vowels with breathing and/or accent
-:  Use Unicode "Combining Diaeresis" character
+**diaereses** on vowels with breathing and/or accent
 
-Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.352)
+:  Use Unicode "Combining Diaeresis" character
 
 [![diaresis][diaeresis]][1]
 
+Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
-[diaeresis]: images/diaeresis.jpg
+[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
 
-[1]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
+[1]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
 
-[1embed]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetBinaryImage&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301&width=9000
+[1embed]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301&width=9000
 
 
 
-macra
+**macra**
+
 :  Use Unicode "Combining Macron" character.
-
-Example: δαίνῡ  {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.70}
 
 [![macron][macron]][2]
 
-[2]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
+Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
-[macron]: images/macron.jpg
 
-brevia
+[2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
+
+[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
+
+**brevia**
+
 : Use Unicode "Combining Breve" character
-
-::brevefloat::
 
 [![breve][breve]][3]
 
-[breve]: images/breve.jpg
+Example: ̆ἄντ (urn:cts:greekLit:tlg0012.tlg001.msA:9.101)
+
+[breve]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113VN-0616.tif&RGN=0.7057,0.5462,0.029,0.0203&WID=8000&CVT=JPEG
+
+[3]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113VN-0616@0.7057,0.5462,0.029,0.0203
 
 
+**elisions**
 
-
-elisions
 : Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
-
-Example: ἄλλ' ἐν {urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.235}
-
 
 [![elision][elision]][4]
 
-[elision]: images/elision.jpg
+Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
-[4]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
+[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=8000&CVT=JPEG
+
+[4]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
 
 
-"floating" grave accents
+**"floating" grave accents**
+
 : Floating grave accents in the manuscript can appear on an elided syllable. 
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
+[!["floating" accent][float]][5]
+
 Example: μετα δ`᾽ ἔσσεται 
-{urn:cts:greekLit:tlg0012.tlg001.msA.hmt:9.131}
+(urn:cts:greekLit:tlg0012.tlg001.msA:9.131)
 
-!["floating" accent][float][5]
+[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=8000&CVT=JPEG
 
-[float]: images/float.jpg
+[5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-[5]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
+## Orthography ##
 
-
-
-
-## Orthography
-
-
-
-accentuation and breathings
+**accentuation and breathings**
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
 
-iota
+**iota**
 : Iotas are consistently written adscript in most of our manuscripts: we write them subscript where that is usual in modern practice without implying that the manuscript does so.
 
-ligatures and variant letter forms
+[![iota subscript][subscript]][200]
+
+[200]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.501,0.2434,0.058,0.027
+
+[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG 
+
+Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
+
+**ligatures and variant letter forms**
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. 
 
 
 ## Distinct content types ##
 
-
-
 ### Named entities (proper nouns and adjectives) ###
 
 
+**personal names**
 
-personal names
 : Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
 
+[![Achilles][Achilles]][500]
 
-Example
+Example:
     
-    <persName n="urn:cite:hmt:pers.pers1">Ἀχιλῆος</persName>
+`<persName n="urn:cite:hmt:pers.pers1">Ἀχιλλεύς</persName>`
 
-place names
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.58)
+
+[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=8000&CVT=JPEG
+
+[500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.488,0.2915,0.063,0.0263
+
+- Note in cases where more than one person is refered to, such as the Atreidai, you double wrap personal names
+
+[![Atreidai][Atreidai]][501]
+
+Example:
+
+`<persName n="urn:cite:hmt:pers.pers22"><persName n="urn:cite:hmt:pers.pers119">Ἀτρεΐδαι</persName></persName>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.17)
+
+[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=8000&CVT=JPEG
+
+[501]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263
+
+**place names**
+
 : Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
 
+[![Argos][Argos]][503]
 
-Example
+Example:
 
+`<placeName n="urn:cite:hmt:place.place114">Ἄργεϊ</placeName>`
 
-    <placeName n="urn:cite:hmt:place.place185">Σπάρτη</placeName> 
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.30)
 
+[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=8000&CVT=JPEG
 
-ethnic adjectives
-:  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place].
-
-
-    <rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιοὶ</rs>
-
+[503]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293
 
 
+**ethnic adjectives**
 
+:  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
+
+[![Achaious][Achaious]][504]
+
+Example:
+
+`<rs type="ethnic" n="urn:cite:hmt:place.place96">Ἀχαιούς</rs>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:1.61)
+
+- Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
+
+[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=8000&CVT=JPEG
+
+[504]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027
+
+**astronomical bodies**
+
+:   Use TEI `rs` element.   Include a `@type` attribute with value `astro`, and `@n` attribute with an identifer from the [reference table for astronomical bodies][astro].
+
+[![Orion][Orion]][505]
+
+Example:
+
+`<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)    
+
+[astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
+
+[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=8000&CVT=JPEG
+
+[505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323
+
+**untagged proper names**
+
+:   While it is tempting to tag all proper names, there are other names capitalized in our editions that we do not tag as named entities because they are too vague or don't fit our categories. Among them include: the Muses, Gorgons, Centaurs, Giants, Myrmidons, the Scaean Gate, and adjectival forms of people's names (ergo, we can tag 'Homer' but not 'Homeric'). We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
 
 ###Other special content types ###
 
+**titles**
 
-"word-as-word"
-:  Use TEI `rs` element, with `@type` attribute = `waw`.
-
-
-titles
 :  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
-- Use TEI `title` element (wrapping `ref` if that is given)
+- Use TEI `title` element (wrapping `ref` if that is given). `ref` is not necessary if it is a work or portion of a work we do not have a URN for.
+
+[![Odyssey][Odyssey]][600]
+
+Example: 
+
+`<title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.4)
+
+- Note that book numbers are considered titles, as are common names for books or portions of books (e.g. the Catalog refering to the Catalog of Ships in Book 2).
+
+[Odyssey]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.6086,0.2072,0.037,0.0203&WID=9000&CVT=JPEG
+
+[600]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.6086,0.2072,0.037,0.0203
 
 
-     <title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>
+**numbers**
 
+: Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
 
-numbers
-: Use TEI `num` with `@value` attribute.
+[![number][number]][602]
 
+`<num value="50">ν</num>`
 
-    <num value="1">α</num>
+(urn:cts:greekLit:tlg5026.msA.hmt:1.42)
 
+[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
 
+[602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
+    
+note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
 
-quoted strings
-: Use TEI `rs` element with `@type` attribute = `waw` ("word-as-word")
- 
+### Quotation and citation ###
 
-    <rs type="waw">ε</rs>
+**unidentified quoted phrases**
+
+:  Use TEI `q` for quoted phrases or passages from unidentified sources. This is for one or more parsable Greek words. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
+
+[![q1][q1]][400]
+
+Example:
+
+`<q>πρὸς ὃ</q>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
+
+[q1]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.709,0.154,0.04,0.0188&WID=8000&CVT=JPEG
+
+[400]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.709,0.154,0.04,0.0188
+
+**identifiable quotations**
+
+: Use TEI `q/ref` pair wrapped in a `cit` element.  On `ref` element use `@type` attribute =`urn`. Inside `ref` element give the full cts urn for the quote. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
+
+[![quotation][quot]][111]
+
+Example:
+
+`<cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:17.453</ref><q>ἔτι γάρ σφισι κῦδος ὀρέξω</q></cit>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:4.8)
+
+[quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=8000&CVT=JPEG
+
+[111]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
+
+**quoted strings**
+: Use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). This is for string of letters that are not parsable as Greek words. Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizonatal bars that denote numbers and you have to determine from context. The neuter article, prepostions, and other vocabulary realted to writing will be your clue.
+
+[![waw][waw]][300]
+
+Example:
+
+`<rs type="waw">ν</rs>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
+
+[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=8000&CVT=JPEG
+
+[300]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.697,0.1548,0.018,0.0195
 
 
 ##Editorial status##
@@ -162,208 +282,222 @@ quoted strings
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
 
 1. *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
-2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read.
-3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present.
+2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
+3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
 
+[hole]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA044VN-0546@0.24,0.7506,0.065,0.0729
 
+[fading]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.7808,0.0916,0.1251,0.2297
 
+[uv]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RUVD-0895@0.577,0.1367,0.248,0.4636
 
-Clear readings
+**Clear readings**
+
 : Enter the text with no additional markup
 
-Unclear readings
-: Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element.
+**Unclear readings**
 
-
-Example:
-
-    <w>γ<unclear>ὰ</unclear>ρ</w>
-
+: Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
 
 [![unclear][unclear]][100]
 
-[100]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
+Example:
+
+`<w>γ<unclear>ὰ</unclear>ρ</w>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:8.132)
 
 
-[unclear]: images/unclear.jpg
+[100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
 
 
-Missing
+[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=8000&CVT=JPEG
+
+
+**Missing**
 :  Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for example, "letters" or "words"), and `@extent`  to indicate how many units are likely included in the gap.
 
 Example:
 
-    <gap unit="letters" extent="3"/>
+`<gap unit="letters" extent="3"/>`
 
 
 
 
-Text deleted by original scribe
+**Text deleted by original scribe**
 : Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
-
-Example
-
-    <del>ἢ τοὺς ἑξῆς τρεῖς</del>
-
-
 
 [![deletion][deletion]][102]
 
-[deletion]: images/deletion.jpg
-
-[102]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA054RN-0055@0.3682,0.1297,0.0301,0.0113
-
-Added text above line
-: Use TEI `add` element, including `@place` attribute with value `supralinear`
-
 Example:
 
+`<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>` (urn:cts:greekLit:tlg5026.msA.hmt:9.193)
 
+[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=8000&CVT=JPEG
 
-    <w>ἔνι<add place="supralinear">οι</add></w>
+[102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
+
+**Added text above line**
+
+: Use TEI `add` element, including `@place` attribute with value `supralinear`
 
 [![added text][added]][103]
 
-[103]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
+Example:
 
-[added]: images/added.jpg
+`<w>ἔνι<add place="supralinear">οι</add></w>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:4.9)
+
+[103]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
+
+[added]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5045,0.7325,0.031,0.021&WID=8000&CVT=JPEG
 
 
-Alternate readings offered above the line
+**Alternate readings offered above the line**
+
 : Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
-Example 
+Example:
 
-    <choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>
+`<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.351)
 
 
 [![alternative text][alt]][104]
 
-[alt]: images/alt.jpg
+[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=8000&CVT=JPEG
 
 
-[104]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
+[104]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
 
 
 
-Scribal corrections
+**Scribal corrections**
+
 : Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
-
-
-
-Example: accent corrected by the original scribe
-
-    <choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>
-
 
 [![correction][corr]][105]
 
 
-[corr]: images/corr.jpg
+Example: accent corrected by the original scribe
 
-[105]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
+`<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>`
 
-## Abbreviations
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.337)
 
-Regular terminating syllables
-: Regular terminating syllables (often morphological endings) are treated as a variant letter form, and are not specially marked in any way
+[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=8000&CVT=JPEG
 
-Example:
+[105]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
 
-εἰκος, where a raised omicron is a brief writing for the morphological ending -ος
+## Abbreviations ##
 
+###Abbreviations without mark up###
+
+**Regular terminating syllables**
+
+: Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the paleography guide if you are unfamiliar with the common abbreviations.
 
 [![Abbreviate -os][os]][106]
 
-[106]:  http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159
+Example:
 
-[os]: images/os.jpg
+εἰκος, where a raised omicron is a brief writing for the morphological ending -ος (urn:cts:greekLit:tlg5026.msA.hmt:4.478)
 
-καί and ὅτι
-: Regular abbreviated forms of the whole words καί and ὅτι are treated as variant letter forms, and are not specially marked in any way
+[106]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159
+
+[os]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.7755,0.4663,0.0263,0.0159&WID=8000&CVT=JPEG
+
+**Symbol Abbreviations** 
+
+: Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
 
 Examples:
 
 [![καί][kai]][107]
 
+(urn:cts:greekLit:tlg5026.msA.hmt:4.437)
 
 [![oti][oti]][108]
 
-[oti]: images/oti.jpg
+(urn:cts:greekLit:tlg5026.msA.hmt:4.8)
 
-[kai]: images/kai.jpg
+[oti]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.6517,0.4711,0.02,0.0158&WID=8000&CVT=JPEG
 
-[107]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137
+[kai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA056RN-0057.tif&RGN=0.621,0.5696,0.0152,0.0137&WID=8000&CVT=JPEG
 
-[108]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
+[107]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137
 
-
-Other abbreviations
-: Use the TEI `abbr/expan` pair, wrapped in `choice`
-
-Example
+[108]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
 
 
-        <choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>
+### Abbreviations that Require Mark up ###
+
+**paleographically ambiguous abbreviations**
+
+: Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
+
+- Use the TEI `abbr/expan` pair, wrapped in `choice`
 
 [![abbreviation][houtos]][109]
 
-[109]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135
+Example: 
 
-[houtos]: images/houtos.jpg
+`<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>`
 
+(urn:cts:greekLit:tlg5026.msA.hmt:4.495)
 
-    <choice><abbr>περ</abbr><expan>πάτερ</expan></choice>
+[109]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135
+
+[houtos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.453,0.7399,0.0224,0.0135&WID=8000&CVT=JPEG
 
 [![abbr][pater]][110]
 
-[pater]: images/pater.jpg
+Example:
 
-[110]: http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
+`<choice><abbr>περ</abbr><expan>πάτερ</expan></choice>`
 
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.288)
 
+[pater]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.3183,0.293,0.045,0.024&WID=8000&CVT=JPEG
 
-
-## Quotation and citation ##
-
-
-unidentified quoted phrases
-:  Use TEI `q` for quoted phrases or passages from unidentified sources
-
-Example 
-
-    <q>ἀλλ ὥς τις κείνων γε</q>
+[110]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
 
 
-identifiable quotations
-: Use TEI `q/ref` pair wrapped in a `cit` element.  
+## Multiple types of Mark up Required ##
+
+We have three major categories of mark up in our XML documents:
+- Structural: this is already handled in your template files (i.e. organizing things by book, etc.)
+- Special Content: indications of numbers, titles, named entities, etc.
+- Editorial Status: things like abbreviations, whether the text is readable, etc.
 
 
-    <cit><ref type="urn">urn:cts:greekLit:tlg0012.tlg001:17.453</ref><q>ἔτι γάρ σφισι κῦδος ὀρέξω</q></cit>
+In cases where you have mark up for both editorial status and special content (e.g. an abbreviation personal name), you will do the editorial status first, then wrap it in the mark up for content.
 
-[![quotation][quot]][111]
+Example:
 
-
-[quot]: images/quot.jpg
-
-[111]:  http://beta.hpcc.uh.edu/tomcat/hmt/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
+`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr><expan>Ἀρίσταρχος</expan></choice></persName>` 
 
 ## Appendix:  other references ##
 
 
 Reference table for identifiers for personal names: 
-[https://www.google.com/fusiontables/DataSource?docid=1fcfeXQWcChl-EiSt9vNHMfXYGSM3ETn5ZwTKF0Y#rows:id=1][pers]
-
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/hmtnames.csv][pers]
 
 Reference table for identifiers for place names:
-[https://www.google.com/fusiontables/DataSource?docid=1M7FKJjXaK4WQVL85zhi30TsWHeF-XSMVfQ3bYz8#rows:id=1][place]
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/hmtplaces.csv][place]
+
+Reference table for identifiers for astronomical bodies:
+[https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv][astro]
+
+Paleography Guide to the Venetus A:
+[http://homermultitext.github.io/hmt-docs/palguide.pdf][paleo]
 
 
 
 [pers]: https://www.google.com/fusiontables/DataSource?docid=1fcfeXQWcChl-EiSt9vNHMfXYGSM3ETn5ZwTKF0Y#rows:id=1
 
-
-
-
-
 [place]: https://www.google.com/fusiontables/DataSource?docid=1M7FKJjXaK4WQVL85zhi30TsWHeF-XSMVfQ3bYz8#rows:id=1
+
+[paleo]: http://homermultitext.github.io/hmt-docs/palguide.pdf
