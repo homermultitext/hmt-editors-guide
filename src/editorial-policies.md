@@ -527,7 +527,7 @@ Some scholia appear to have connecting signs that work in a way similar to footn
 |Column Item|Definition|Example|
 |:---|:---|:---|
 |ObjectURN|a unique reference for the object|urn:cite:hmt:VAscholiasign_1|
-|ScholionURN|full URN for the scholion referenced|urn:cts:greekLit:tlg5026.msA.hmt:19.2015office9_2|
+|ScholionURN|full cts URN for the scholion referenced|urn:cts:greekLit:tlg5026.msA.hmt:19.2015office9_2|
 |ImageURN|full cite URN for the image of the mark|urn:cite:hmt:vaimg.VA253RN-0424@0.1181,0.3001,0.0228,0.0114|
 |Notes|any relevant comments such as type of mark|curly oti|
 
@@ -535,24 +535,24 @@ Some scholia appear to have connecting signs that work in a way similar to footn
 
 On rare occasions you may find critical signs next to the scholia. While the ones next to the main text are already indexed, the ones next to the scholia are not. In this situation, you should make a file called `venAsigns-Scholia.csv` in your Collections folder with the following columns:
 
-`OccurenceURN,SequenceWithinBook,CritSignURN,TextURN,ImageURN`
+`OccurenceURN,SequenceWithinBook,CritSignURN,ScholiaURN,ImageURN`
 
 |Column Item|Definition|Example|
 |:---|:---|:---|
-|OccurenceURN|a unique cite URN for the occurence of the sign||
-|SequenceWithinBook|numerical sequence of the sign within the assign book||
-|CritSignURN|cite URN reference for the type of critical sign||
-|TextURN|cts URN for the scholion||
-|ImageURN|||
-
+|OccurenceURN|a unique cite URN for the occurence of the sign|urn:cite:hmt:venAscholiasign.1|
+|SequenceWithinBook|numerical sequence of the sign within the assigned book|1|
+|CritSignURN|cite URN reference for the type of critical sign|urn:cite:hmt:critsigns.diple|
+|ScholiaURN|full cts URN for the scholion referenced|urn:cts:greekLit:tlg5026.msA.hmt:17.76|
+|ImageURN|full cite URN for the image of the critical sign|urn:cite:hmt:vaimg.VA227RN-0398@0.349,0.726,0.02,0.015|
 
 crit sign URNs are:
-urn:cite:hmt:critsigns.diple
-urn:cite:hmt:critsigns.dotteddiple
-urn:cite:hmt:critsigns.asterisk
-urn:cite:hmt:critsigns.obelos
-urn:cite:hmt:critsigns.dottedantisigma
-urn:cite:hmt:critsigns.dottedsigma
+
+|diple|urn:cite:hmt:critsigns.diple|
+|dotted diple|urn:cite:hmt:critsigns.dotteddiple|
+|asterisk|urn:cite:hmt:critsigns.asterisk|
+|obelos|urn:cite:hmt:critsigns.obelos|
+|dotted antisigma|urn:cite:hmt:critsigns.dottedantisigma|
+|dotted sigma|urn:cite:hmt:critsigns.dottedsigma|
 
 ## Appendix:  other references ##
 
