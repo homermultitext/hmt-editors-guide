@@ -1,4 +1,4 @@
-### Editing Non-Textual Elements ###
+# Editing Non-Textual Elements #
 
 ## Slurs ##
 
