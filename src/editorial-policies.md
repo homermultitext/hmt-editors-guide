@@ -223,9 +223,9 @@ note: Remember that Dindorf and Erbse will typically take a Milesian numeral and
 
 ### Quotation and citation ###
 
-**unidentified quoted phrases**
+**unidentified quoted words, phrases, or passages**
 
-:  Use TEI `q` for quoted phrases or passages. A quoted selection must be at least one full parsable Greek work. Quoted phrases can ranges from hypothetical phrases to multiforms to quotations from works that we cannot cite. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
+:  Use TEI `q` for quoted words, phrases, or passages. A quoted selection must be at least one full parsable Greek work. Quoted phrases can ranges from hypothetical phrases to multiforms to quotations from works that we cannot cite. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
 
 [![q1][q1]][400]
 
