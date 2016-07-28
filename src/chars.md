@@ -2,7 +2,7 @@
 
 **diaereses** on vowels with breathing and/or accent
 
-:  Use Unicode "Combining Diaeresis" character
+Use Unicode "Combining Diaeresis" character. This can be found in special character menus on most operating systems and basic text editors. 
 
 [![diaresis][diaeresis]][1]
 
