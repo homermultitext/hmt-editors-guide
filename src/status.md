@@ -14,11 +14,11 @@ While readers always take many kinds of contextual information into consideratio
 
 **Clear readings**
 
-: Enter the text with no additional markup
+Enter the text with no additional markup
 
 **Unclear readings**
 
-: Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
+Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
 
 [![unclear][unclear]][100]
 
@@ -36,7 +36,7 @@ Example:
 
 
 **Missing**
-:  Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for example, "letters" or "words"), and `@extent`  to indicate how many units are likely included in the gap.
+Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for example, "letters" or "words"), and `@extent`  to indicate how many units are likely included in the gap.
 
 Example:
 
@@ -46,7 +46,7 @@ Example:
 
 
 **Text deleted by original scribe**
-: Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
+Use TEI `del` when the scribe has either crossed out content or marked it with "deletion dots"
 
 [![deletion][deletion]][102]
 
@@ -60,7 +60,7 @@ Example:
 
 **Added text above line**
 
-: Use TEI `add` element, including `@place` attribute with value `supralinear`
+Use TEI `add` element, including `@place` attribute with value `supralinear`
 
 [![added text][added]][103]
 
@@ -77,7 +77,7 @@ Example:
 
 **Alternate readings offered above the line**
 
-: Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
+Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
 Example:
 
@@ -97,7 +97,7 @@ Example:
 
 **Scribal corrections**
 
-: Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
+Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
 
 [![correction][corr]][105]
 
