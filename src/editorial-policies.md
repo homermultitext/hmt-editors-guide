@@ -40,13 +40,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 : Use Unicode "Combining Breve" character
 
-[![breve][breve]][3]
-
-Example: ̆ἄντ (urn:cts:greekLit:tlg0012.tlg001.msA:9.101)
-
-[breve]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113VN-0616.tif&RGN=0.7057,0.5462,0.029,0.0203&WID=8000&CVT=JPEG
-
-[3]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113VN-0616@0.7057,0.5462,0.029,0.0203
+urn:cite:hmt:edguide.brevefloat.v1
 
 
 **elisions**
@@ -65,12 +59,12 @@ Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
 **"floating" grave accents**
 
-: Floating grave accents in the manuscript can appear on an elided syllable. 
+: Floating grave accents in the manuscript can appear on an elided syllable.
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
 [!["floating" accent][float]][5]
 
-Example: μετα δ`᾽ ἔσσεται 
+Example: μετα δ`᾽ ἔσσεται
 (urn:cts:greekLit:tlg0012.tlg001.msA:9.131)
 
 [float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=8000&CVT=JPEG
@@ -89,12 +83,12 @@ Example: μετα δ`᾽ ἔσσεται
 
 [200]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.501,0.2434,0.058,0.027
 
-[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG 
+[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG
 
 Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 
 **ligatures and variant letter forms**
-: Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. 
+: Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions.
 
 
 ## Distinct content types ##
@@ -109,7 +103,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 [![Achilles][Achilles]][500]
 
 Example:
-    
+
 `<persName n="urn:cite:hmt:pers.pers1">Ἀχιλλεύς</persName>`
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.58)
@@ -198,7 +192,7 @@ Example:
 
 [![Odyssey][Odyssey]][600]
 
-Example: 
+Example:
 
 `<title><ref type="urn" n="urn:cts:greekLit:tlg0012.tlg002">Οδυσσεία</ref></title>`
 
@@ -224,7 +218,7 @@ Example:
 [number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
 
 [602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
-    
+
 note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
 
 ### Quotation and citation ###
@@ -409,7 +403,7 @@ Example:
 
 [os]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.7755,0.4663,0.0263,0.0159&WID=8000&CVT=JPEG
 
-**Symbol Abbreviations** 
+**Symbol Abbreviations**
 
 : Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
 
@@ -442,7 +436,7 @@ Examples:
 
 [![abbreviation][houtos]][109]
 
-Example: 
+Example:
 
 `<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>`
 
@@ -477,12 +471,12 @@ In cases where you have mark up for both editorial status and special content (e
 
 Example:
 
-`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr><expan>Ἀρίσταρχος</expan></choice></persName>` 
+`<persName n="urn:cite:hmt:pers.pers16"><choice><abbr>Αρισταρχ</abbr><expan>Ἀρίσταρχος</expan></choice></persName>`
 
 ## Appendix:  other references ##
 
 
-Reference table for identifiers for personal names: 
+Reference table for identifiers for personal names:
 [https://github.com/homermultitext/hmt-authlists/blob/master/data/hmtnames.csv][pers]
 
 Reference table for identifiers for place names:
