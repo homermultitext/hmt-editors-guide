@@ -1,8 +1,10 @@
-## Characters and character sequences ##
+# Characters and character sequences #
 
-**diaereses** on vowels with breathing and/or accent
+## Diacritical Marks ##
 
-Use Unicode "Combining Diaeresis" character. This can be found in special character menus on most operating systems and basic text editors. 
+Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
+
+**diaereses** on vowels with breathing and/or accent should use Unicode "Combining Diaeresis" character.
 
 [![diaresis][diaeresis]][1]
 
@@ -14,31 +16,23 @@ Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
 [1embed]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301&width=9000
 
-
-
-**macra**
-
-:  Use Unicode "Combining Macron" character.
+**macra** should use Unicode "Combining Macron" character.
 
 [![macron][macron]][2]
 
 Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
-
 [2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
 
 [macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
 
-**brevia**
-
-: Use Unicode "Combining Breve" character
+**brevia** should use Unicode "Combining Breve" character
 
 urn:cite:hmt:edguide.brevefloat.v1
 
-
 **elisions**
 
-: Of the many possible Unicode characters for elision, use only Unicode straight single quote.  If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
+Of the many possible Unicode characters for elision, use only Unicode straight single quote. If you use Sophokeys to enter Greek, note that this is **not** the character it generates automatically when entering Greek.
 
 [![elision][elision]][4]
 
