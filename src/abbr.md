@@ -1,10 +1,10 @@
-## Abbreviations ##
+# Abbreviations #
 
-###Abbreviations without mark up###
+## Abbreviations without mark up ##
 
 **Regular terminating syllables**
 
-: Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the paleography guide if you are unfamiliar with the common abbreviations.
+Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the [paleography guide](http://homermultitext.github.io/hmt-docs/palguide.pdf) if you are unfamiliar with the common abbreviations.
 
 [![Abbreviate -os][os]][106]
 
@@ -18,7 +18,7 @@ Example:
 
 **Symbol Abbreviations**
 
-: Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
+Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
 
 Examples:
 
@@ -43,7 +43,7 @@ Examples:
 
 **paleographically ambiguous abbreviations**
 
-: Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
+Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
 
 - Use the TEI `abbr/expan` pair, wrapped in `choice`
 
