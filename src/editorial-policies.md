@@ -225,7 +225,7 @@ note: Remember that Dindorf and Erbse will typically take a Milesian numeral and
 
 **unidentified quoted phrases**
 
-:  Use TEI `q` for quoted phrases or passages from unidentified sources. This is for one or more parsable Greek words. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
+:  Use TEI `q` for quoted phrases or passages. A quoted selection must be at least one full parsable Greek work. Quoted phrases can ranges from hypothetical phrases to multiforms to quotations from works that we cannot cite. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
 
 [![q1][q1]][400]
 
@@ -241,7 +241,7 @@ Example:
 
 **identifiable quotations**
 
-: Use TEI `q/ref` pair wrapped in a `cit` element.  On `ref` element use `@type` attribute =`urn`. Inside `ref` element give the full cts urn for the quote. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
+: Use TEI `q/ref` pair wrapped in a `cit` element.  On `ref` element use `@type` attribute =`urn`. Inside `ref` element give the full cts urn for the quote (i.e. the text reference). The most common references will likely be *Iliad* or *Odessey* quotes. If you have other citations, see the lists of citable [authors](https://github.com/chs-tg/greekLit/blob/master/collections/greekLit-groups.csv) and [works](https://github.com/chs-tg/greekLit/blob/master/collections/greekLit-works.csv). If you have a known text that is not reference, create an [issue](https://github.com/chs-tg/greekLit/issues) in the repository. The scribe will not make quotes visually distinct. Use our print editions to help you, as well as context.
 
 [![quotation][quot]][111]
 
@@ -256,7 +256,7 @@ Example:
 [111]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
 
 **quoted strings**
-: Use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). This is for string of letters that are not parsable as Greek words. Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizonatal bars that denote numbers and you have to determine from context. The neuter article, prepostions, and other vocabulary realted to writing will be your clue.
+: Quoted strings are defined as strings of letters that should not be considered parsable Greek words. One example might be the scholion talking about the use of the letter sigma. We do not want the machine to treat a single sigma as a Greek word so use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizonatal bars that denote numbers and you have to determine from context. The neuter article, prepostions, and other vocabulary realted to writing will be your clue.
 
 [![waw][waw]][300]
 
