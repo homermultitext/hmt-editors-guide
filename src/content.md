@@ -1,11 +1,10 @@
-## Distinct content types ##
+# Distinct content types #
 
-### Named entities (proper nouns and adjectives) ###
-
+## Named entities (proper nouns and adjectives) ##
 
 **personal names**
 
-: Use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers].
+For people, mythological or historical, use TEI `persName` element; include an `@n` attribute with the full URN value from the [reference table of identifiers for personal names][pers]. If a person does not yet exist in the authority list, create an issue in the repository to request its addition.
 
 [![Achilles][Achilles]][500]
 
@@ -35,7 +34,7 @@ Example:
 
 **place names**
 
-: Use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place].
+For places, mythological or historical, use TEI `placeName` element; include on the `@n` attribute has a full URN value from  the [reference table of identifiers for place names][place]. If a place does not yet exist in the authority list, create an issue in the repository to request its addition.
 
 [![Argos][Argos]][503]
 
@@ -50,9 +49,9 @@ Example:
 [503]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293
 
 
-**ethnic adjectives**
+**ethnic groups**
 
-:  Use TEI `rs` element.  Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
+These are exclusively for groups of people that can be traced either to a geographic place or an emponymous ancestor. Use TEI `rs` element. Include a `@type` attribute with value `ethnic`, and `@n` attribute with an identifier from the  [reference table for place names][place] or the [reference table for personal names][pers], when you need to use an eponymous ancestor (such as the Danaans).
 
 [![Achaious][Achaious]][504]
 
@@ -63,6 +62,10 @@ Example:
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.61)
 
 - Since some ethnic names could be attributed to a location or an eponymous ancester (e.g. Trojans link to Tros or Troy), always take the geographic location before resorting to an eponymous ancestor.
+- Note that the ethnic mark up is only for people or groups of people (e.g. Trojan man or Trojans). We would not use it to describe a dialect (e.g. Ionic) or an inanimate object. Those are treated as normal vocabulary items that can be searched. 
+- Groups that cannot be tied to a geographic place or an eponymous ancestor are also treated as vocabulary items (e.g. Centaurs, Myrmidons, Gorgons, Giants, Fates, etc). 
+- Adjectival forms of people's names are also not tagged (ergo, we can tag 'Homer' but not 'Homeric')
+- We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
 
 [Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=8000&CVT=JPEG
 
@@ -86,16 +89,12 @@ Example:
 
 [505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323
 
-**untagged proper names**
-
-:   While it is tempting to tag all proper names, there are other names capitalized in our editions that we do not tag as named entities because they are too vague or don't fit our categories. Among them include: the Muses, Gorgons, Centaurs, Giants, Myrmidons, the Scaean Gate, and adjectival forms of people's names (ergo, we can tag 'Homer' but not 'Homeric'). We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not.
-
-###Other special content types ###
+##Other special content types ##
 
 **titles**
 
-:  If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
-- Use TEI `title` element (wrapping `ref` if that is given). `ref` is not necessary if it is a work or portion of a work we do not have a URN for.
+If the title refers to a known, citable work, use TEI `ref` with `@type='urn'` and `@n` attribute with a full URN for the work
+- Use TEI `title` element (wrapping `ref` if that is given). `ref` is not necessary if it is a work or portion of a work we do not have a URN for. You can find a full list of our citable [authors](https://github.com/chs-tg/greekLit/blob/master/collections/greekLit-groups.csv) and [works](https://github.com/chs-tg/greekLit/blob/master/collections/greekLit-works.csv). If a known work is not present, please create an issue in the repository to request its addition.
 
 [![Odyssey][Odyssey]][600]
 
@@ -114,7 +113,7 @@ Example:
 
 **numbers**
 
-: Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
+Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
 
 [![number][number]][602]
 
