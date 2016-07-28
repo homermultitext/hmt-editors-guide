@@ -43,10 +43,9 @@ Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 [4]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
 
-
 **"floating" grave accents**
 
-: Floating grave accents in the manuscript can appear on an elided syllable.
+Floating grave accents in the manuscript can appear on an elided syllable.
 "Float" a grave accent character between the last letter of the word and the elision mark.
 
 [!["floating" accent][float]][5]
