@@ -539,7 +539,7 @@ On rare occasions you may find critical signs next to the scholia. While the one
 
 |Column Item|Definition|Example|
 |:---|:---|:---|
-|OccurenceURN|a unique cite URN for the occurence of the sign|urn:cite:hmt:venAscholiasign.1|
+|OccurenceURN|a unique cite URN for the occurence of the sign|urn:cite:hmt:venAscholiacritsign.1|
 |SequenceWithinBook|numerical sequence of the sign within the assigned book|1|
 |CritSignURN|cite URN reference for the type of critical sign|urn:cite:hmt:critsigns.diple|
 |ScholiaURN|full cts URN for the scholion referenced|urn:cts:greekLit:tlg5026.msA.hmt:17.76|
