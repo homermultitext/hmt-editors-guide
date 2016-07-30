@@ -97,7 +97,7 @@ String formatSource (String md, LinkedHashMap exampleMap) {
       }
       
     } else {
-      //formatted.append(l + "\n\n")
+      formatted.append(l + "\n\n")
     }
   }
   return formatted.toString()
