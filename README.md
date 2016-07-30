@@ -3,7 +3,7 @@
 
 Editorial guide for contributors to the Homer Multitext project.  The master branch has the most up to date revision.
 
-To create a single document formatted in markdown, run the [gradle](https://gradle.org/) task `gradle formatMd`. 
+To create a single document formatted in markdown, run the [gradle](https://gradle.org/) task `gradle formatMd`.   The results are saved in the file `generated/guide.md`.
 
 ## Earlier versions
 
