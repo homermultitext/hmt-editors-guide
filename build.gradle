@@ -1,0 +1,132 @@
+apply plugin: "base"
+apply plugin:  "groovy"
+apply plugin:  "java"
+
+
+group = "org.homermultitext"
+version = "1.0.0"
+
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url "http://beta.hpcc.uh.edu/nexus/content/repositories/releases"
+    }
+  }
+
+  dependencies {
+    classpath group: 'org.codehaus.groovy', name: 'groovy-all', version: '2.+'
+    classpath  group: 'edu.holycross.shot', name: 'safecsv', version: '1.+'
+    classpath group: 'edu.harvard.chs', name:'cite', version: '1.+'
+
+  }
+}
+
+import edu.holycross.shot.safecsv.SafeCsvReader
+import edu.harvard.chs.cite.CiteUrn
+import edu.harvard.chs.cite.CtsUrn
+
+String formatExample(String key, LinkedHashMap examples, Integer idx) {
+  def data = examples[key]
+
+  System.err.println "{key} --> ${data}"
+
+  String urlBase = "http://www.homermultitext.org/hmt-digital/images"
+  //ImageUrn,TextPassage,Good,Bad,TeiElements
+  StringBuilder sbldr = new StringBuilder()
+  CiteUrn img
+  CtsUrn txt
+  try {
+    img = new CiteUrn(data[0])
+    txt = new CtsUrn(data[1])
+
+    if (txt.hasSubref()) {
+      sbldr.append("Example:  ${txt.getSubref()} (${txt.getUrnWithoutPassage()}${txt.getPassageNode()})\n\n")
+    } else {
+      sbldr.append("Example: (${txt})\n\n")
+    }
+
+    sbldr.append("[![${key}][${idx}]][${idx}zoom]\n\n")
+    sbldr.append("[${idx}]: ${urlBase}?request=GetBinaryImage&urn=${img}\n\n")
+    sbldr.append("[${idx}zoom]: ${urlBase}?request=GetIIPMooViewer&urn=${img}\n\n")
+
+    sbldr.append("Example of correct usage:\n\n")
+    sbldr.append("    ${data[2]}\n\n")
+
+    if (data[3].size() > 0) {
+      sbldr.append("Incorrect usage:\n\n")
+      sbldr.append("    ${data[3]}\n\n")
+    }
+
+
+  } catch (Exception e) {
+    System.err.println "Failed on entry ${key}:  " + e
+  }
+
+    /*
+
+    [![diaresis][diaeresis]][1]
+
+    Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
+
+    [diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
+
+    [1]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
+
+    [1embed]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301&width=9000
+
+
+  */
+
+  return sbldr.toString()
+}
+
+
+
+String formatSource (String md, LinkedHashMap exampleMap) {
+  StringBuilder formatted = new StringBuilder()
+  Integer count = 0
+  md.eachLine { l ->
+    if (l ==~ /urn:cite:hmt:edguide.+/) {
+      count++;
+      if (! exampleMap.keySet().contains(l)) {
+	System.err.println "ERROR: no data for example with URN " + l
+	System.out.println "ERROR: no data for example with URN " + l
+      } else {
+	formatted.append(formatExample(l, exampleMap, count))
+      }
+      
+    } else {
+      //formatted.append(l + "\n\n")
+    }
+  }
+  return formatted.toString()
+}
+
+
+LinkedHashMap getExampleMap() {
+  File csv = new File("examples.csv")
+  def examples = [:]
+  SafeCsvReader srcReader = new SafeCsvReader(csv)
+  srcReader.readAll().each { cols ->
+    examples[cols[0]] = cols.drop(1)
+  }
+  return examples
+}
+
+task formatMd() {
+}
+
+
+formatMd.doLast {
+  LinkedHashMap examples = getExampleMap()
+  StringBuilder compositeSrc =  new StringBuilder()
+  File toc = new File("markdown/toc.txt")
+  toc.eachLine {
+    File f = new File("markdown/${it}")
+    compositeSrc.append(f.getText() + "\n\n")
+  }
+  String formattedText = formatSource(compositeSrc.toString(), getExampleMap())
+  File mdFormatted = new File("generated/guide.md")
+  mdFormatted.setText(formattedText)
+}
