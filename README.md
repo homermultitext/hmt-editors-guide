@@ -1,4 +1,4 @@
-# hmt-editors-guide
+# HMT editors' guide
 
 
 Editorial guide for contributors to the Homer Multitext project.  The master branch has the most up to date revision.
