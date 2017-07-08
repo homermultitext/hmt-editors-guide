@@ -28,7 +28,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 **brevia** should use Unicode "Combining Breve" character
 
-urn:cite:hmt:edguide.brevefloat.v1
+urn:cite:hmt:edguide:brevefloat
 
 **elisions**
 

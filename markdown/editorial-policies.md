@@ -40,7 +40,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 : Use Unicode "Combining Breve" character
 
-urn:cite:hmt:edguide.brevefloat.v1
+urn:cite:hmt:edguide:brevefloat
 
 
 **elisions**
@@ -171,7 +171,7 @@ Example:
 
 `<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
 
-(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)    
+(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
@@ -273,7 +273,7 @@ Example:
 
 ##Editorial status##
 
-While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
+While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
 1. *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
 2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
@@ -370,7 +370,7 @@ Example:
 
 **Scribal corrections**
 
-: Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
+: Use TEI `corr/sic` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.
 
 [![correction][corr]][105]
 
@@ -477,9 +477,9 @@ Example:
 
 ## Slurs ##
 
-Semi-circular symbols, which resemble musical slur marks, are written beneath some compound words in the Venetus A manuscript. These marks are recorded in comma separated value tables (files should be .csv and can be edited on github or in simple text editor). The tables for compound word slurs should contain three headings: 
+Semi-circular symbols, which resemble musical slur marks, are written beneath some compound words in the Venetus A manuscript. These marks are recorded in comma separated value tables (files should be .csv and can be edited on github or in simple text editor). The tables for compound word slurs should contain three headings:
 
-`Slur,Reading,Image` 
+`Slur,Reading,Image`
 
 Under **Slur** goes the urn reference for the slur itself. This urn reference is composed of the Book Number, a hyphen, and unique identifying sequence.
 
