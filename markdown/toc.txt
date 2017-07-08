@@ -1,8 +1,5 @@
-chars.md
-ortho.md
-content.md
-quot.md
-status.md
-abbr.md
-nontext.md
-misc.md
+intro.md
+0-transcription.md
+1-tokenization.md
+2-editorialdisambig.md
+3-discoursedisambig.md
