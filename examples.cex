@@ -1,0 +1,27 @@
+TopicUrn#ImageUrn#TextPassage#Good#Bad#TeiElements
+urn:cite2:hmt:edguide.brevefloat.v1#urn:cite2:hmt:vaimg:VA113VN_0616@0.7057,0.5462,0.029,0.0203#urn:cts:greekLit:tlg0012.tlg001.msA:9.101#ἄ̆#
+urn:cite2:hmt:edguide.macra.v1#urn:cite2:hmt:vaimg:VA113RN_0285@0.1832,0.4222,0.0741,0.0233#urn:cts:greekLit:tlg0012.tlg001.msA:9.70#ῡ#
+urn:cite2:hmt:edguide.diaresis.v1#urn:cite2:hmt:vaimg:VA118VN_0621@0.4855,0.5409,0.0721,0.0301#urn:cts:greekLit:tlg0012.tlg001.msA:9.352#ί̈#
+urn:cite2:hmt:edguide.elision.v1#urn:cite2:hmt:vaimg:VA116VN_0619@0.5485,0.2201,0.0561,0.0278#urn:cts:greekLit:tlg0012.tlg001.msA:9.235#`,` or ᾽
+urn:cite2:hmt:edguide.grave.v1#urn:cite2:hmt:vaimg:VA114RN_0286@0.3333,0.6371,0.1221,0.0233#urn:cts:greekLit:tlg0012.tlg001.msA:9.131#`#
+urn:cite2:hmt:edguide.subscript.v1#urn:cite2:hmt:vaimg:VA024RN_0025@0.501,0.2434,0.058,0.027#urn:cts:greekLit:tlg0012.tlg001.msA:1.604#ῃ,ηι
+urn:cite2:hmt:edguide.quote.v1#urn:cite2:hmt:vaimg:VA024RN_0025@0.709,0.154,0.04,0.0188#urn:cts:greekLit:tlg5026.msA.hmt:1.1498#<q>πρὸς ὃ</q>#
+urn:cite2:hmt:edguide.cited.v1#urn:cite2:hmt:vaimg:VA051RN_0052@0.5696,0.5064,0.1552,0.0195#urn:cts:greekLit:tlg5026.msA.hmt:4.8#<cit><ref type='urn'>urn:cts:greekLit:tlg0012.tlg001:17.453</ref><q>ἔτι γάρ σφισι κῦδος ὀρέξω</q></cit>#
+urn:cite2:hmt:edguide.waw.v1#urn:cite2:hmt:vaimg:VA024RN_0025@0.697,0.1548,0.018,0.0195#urn:cts:greekLit:tlg5026.msA.hmt:1.1498#<rs type='waw'>ν</rs>#
+urn:cite2:hmt:edguide.unclear.v1#urn:cite2:hmt:vaimg:VA104RN_0105@0.5386,0.1585,0.0224,0.0174#urn:cts:greekLit:tlg5026.msA.hmt:8.132#<w>γ<unclear>ὰ</unclear>ρ</w>#
+urn:cite2:hmt:edguide.delete.v1#urn:cite2:hmt:vaimg:VA115RN_0287@0.233,0.7521,0.453,0.027#urn:cts:greekLit:tlg5026.msA.hmt:9.193#<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>#
+urn:cite2:hmt:edguide.add.v1#urn:cite2:hmt:vaimg:VA051RN_0052@0.5045,0.7325,0.031,0.021#urn:cts:greekLit:tlg5026.msA.hmt:4.9#<w>ἔνι<add place='supralinear'>οι</add></w>#
+urn:cite2:hmt:edguide.origreg.v1#urn:cite2:hmt:vaimg:VA058RN_0059@0.3844,0.5364,0.1021,0.0293#urn:cts:greekLit:tlg0012.tlg001.msA:4.351#<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>#
+urn:cite2:hmt:edguide.siccorr.v1#urn:cite2:hmt:vaimg:VA058RN_0059@0.5245,0.275,0.0871,0.0308#urn:cts:greekLit:tlg0012.tlg001.msA:4.337#<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>#
+urn:cite2:hmt:edguide.morph.v1#urn:cite2:hmt:vaimg:VA057RN_0058@0.7755,0.4663,0.0263,0.0159#urn:cts:greekLit:tlg5026.msA.hmt:4.478#εἰκος#<choice><abbr>εἰκο</abbr><expan>εἰκος</expan></choice>
+urn:cite2:hmt:edguide.kai.v1#urn:cite2:hmt:vaimg:VA056RN_0057@0.621,0.5696,0.0152,0.0137#urn:cts:greekLit:tlg5026.msA.hmt:4.437#καί#
+urn:cite2:hmt:edguide.oti.v1#urn:cite2:hmt:vaimg:VA051RN_0052@0.6517,0.4711,0.02,0.0158#urn:cts:greekLit:tlg5026.msA.hmt:4.8#ὅτι#
+urn:cite2:hmt:edguide.outos.v1#urn:cite2:hmt:vaimg:VA057RN_0058@0.453,0.7399,0.0224,0.0135#urn:cts:greekLit:tlg5026.msA.hmt:4.495#<choice><abbr>ουτ</abbr><expan>οὑτῶς</expan></choice>#οὑτῶς
+urn:cite2:hmt:edguide.pater.v1#urn:cite2:hmt:vaimg:VA057RN_0058@0.3183,0.293,0.045,0.024#urn:cts:greekLit:tlg0012.tlg001.msA:4.288#<choice><abbr>περ</abbr><expan>πάτερ</expan></choice>#πάτερ
+urn:cite2:hmt:edguide.achilles.v1#urn:cite2:hmt:vaimg:VA013RN_0014@0.488,0.2915,0.063,0.0263#urn:cts:greekLit:tlg0012.tlg001.msA:1.58#<persName n='urn:cite2:hmt:pers.pers1'>Ἀχιλλεύς</persName>#
+urn:cite2:hmt:edguide.atreidai.v1#urn:cite2:hmt:vaimg:VA012RN_0013@0.1602,0.5465,0.0841,0.0263#urn:cts:greekLit:tlg0012.tlg001.msA:1.17#<persName n='urn:cite2:hmt:pers.pers22'><persName n='urn:cite2:hmt:pers.pers119'>Ἀτρεΐδαι</persName></persName>#
+urn:cite2:hmt:edguide.argos.v1#urn:cite2:hmt:vaimg:VA012VN_0514@0.655,0.2915,0.049,0.0293#urn:cts:greekLit:tlg0012.tlg001.msA:1.30#<placeName n='urn:cite2:hmt:place.place114'>Ἄργεϊ</placeName>#
+urn:cite2:hmt:edguide.achaious.v1#urn:cite2:hmt:vaimg:VA013RN_0014@0.461,0.426,0.071,0.027#urn:cts:greekLit:tlg0012.tlg001.msA:1.61#<rs type='ethnic' n='urn:cite2:hmt:place.place96'>Ἀχαιούς</rs>#
+urn:cite2:hmt:edguide.orion.v1#urn:cite2:hmt:vaimg:VA248VN_0750@0.811,0.3343,0.084,0.0323#urn:cts:greekLit:tlg0012.tlg001.msA:18.486#<rs type='astro' n='urn:cite2:hmt:astro.1'>Ὠρίωνος</rs>#
+urn:cite2:hmt:edguide.odyssey.v1#urn:cite2:hmt:vaimg:VA012RN_0013@0.6086,0.2072,0.037,0.0203#urn:cts:greekLit:tlg5026.msA.hmt:1.4#<title><ref type='urn' n='urn:cts:greekLit:tlg0012.tlg002'>Οδυσσεία</ref></title>#
+urn:cite2:hmt:edguide.number.v1#urn:cite2:hmt:vaimg:VA012VN_0514@0.838,0.7543,0.018,0.0195#urn:cts:greekLit:tlg5026.msA.hmt:1.42#<num value='50'>ν</num>#
