@@ -126,3 +126,15 @@ Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizont
 [602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
 
 note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
+
+**lists**
+
+When text is arranged in a list format (see [example](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779)), use TEI element `list` with each line of the list in the element `item`. Items can be numbered (if they are numbered in your text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+
+Full mark up could look something like this:
+
+`<list>`
+`<item>apples</item>`
+`<item>bannanas</item>`
+`<item>bread</item>`
+`</list>`
