@@ -88,6 +88,19 @@ Example: μετα δ`᾽ ἔσσεται
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
+## Punctuation ##
+
+When editing manuscripts, it is important to remember that punctuation is an important part of producing a diplomatic edition. Some easy places to forget about punctuation and other similar graphemes include: the end of Iliadic lines, the crosses at the beginning of lemmata , the various forms of punctuation or lack thereof at the end of lemmata, and punctuation at the end of scholia.
+
+** Punctuation Used **
+
+period: .
+high stop: ·
+comma: ,
+colon: :
+end of scholion: ⁑
+cross: ‡
+
 ## Paleographic Status ##
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
