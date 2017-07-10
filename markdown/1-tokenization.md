@@ -88,7 +88,7 @@ Alternative readings are typically strings of characters or even single letters.
 
 **Regular terminating syllables**
 
-Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the [paleography guide](http://homermultitext.github.io/hmt-docs/palguide.pdf) if you are unfamiliar with the common abbreviations.
+Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the [paleography guide](http://homermultitext.github.io/hmt-docs/palguide.pdf) if you are unfamiliar with the common abbreviations. If accents or other diacritical marks should be present on the abbreviated syllable(s), they can be supplied in the expansion.
 
 [![Abbreviate -os][os]][106]
 
@@ -102,7 +102,7 @@ Example:
 
 **Symbol Abbreviations**
 
-Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
+Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinguishable letter forms. If accents or other diacritical marks should be present on the abbreviated word, they can be supplied in the expansion.
 
 Examples:
 
@@ -127,7 +127,7 @@ Examples:
 
 **paleographically ambiguous abbreviations**
 
-Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
+Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up. If accents or other diacritical marks should be present on the abbreviated syllable(s), they can be supplied in the expansion.
 
 - Use the TEI `abbr/expan` pair, wrapped in `choice`
 
