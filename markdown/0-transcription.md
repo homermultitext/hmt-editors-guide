@@ -1,15 +1,15 @@
-# Tier 1: Transcription #
+# Tier 1: Transcription
 
 The transcription tier handles issues of paleographic status. Is a reading clear? How do we transcribe the specific orthographic choices of the manuscript? What belongs in the text edition and what is recorded elsewhere.
 
-## What doesn't belong in a text edition? ##
+## What doesn't belong in a text edition?
 
 Text editions of the *Iliad* or scholia texts should not contain anything in the following categories:
 1. critical signs: located next to the Iliadic lines in the Venetus A
 2. connecting signs: sometimes written next to scholia and corresponding main text
-3. metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)  
+3. metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
 
-## Orthography ##
+## Orthography and digital character set
 
 Regarding the following issues of orthography, we have very specific conventions for how to display them in Unicode. These examples are unambiguous and therefore do require mark up. We do, however, want to be consistent in how we handle them in our editions.
 
@@ -31,7 +31,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. See more on variant letter forms under abbreviations.
 
 
-## Diacritical Marks ##
+## Diacritical Marks
 
 Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
 
@@ -88,13 +88,13 @@ Example: μετα δ`᾽ ἔσσεται
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-## Paleographic Status ##
+## Paleographic Status
 
-While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.   
+While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
-1. *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
-2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
-3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
+1.  *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
+2.  *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
+3.  *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
 
 [hole]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA044VN-0546@0.24,0.7506,0.065,0.0729
 

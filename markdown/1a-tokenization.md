@@ -1,8 +1,8 @@
-# Tier 2: Tokenization #
+# Tier 2: Tokenization
 
 The tokenization tier disambiguates our edition at the word level. Typically a machine can read tokens by splitting at white space. However, there are a few exceptions that require mark up.
 
-## Word ##
+## Lexical tokens
 
 There are a few cases where we cannot rely on whitespace to split our tokens because of other TEI mark up.
 
@@ -28,6 +28,45 @@ Example:
 
 In cases where the addition does not split a word, you would not need to use `w`
 
+
+
+
+## Numbers
+
+Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
+
+[![number][number]][602]
+
+`<num value="50">ν</num>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.42)
+
+[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
+
+[602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
+
+note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
+
+
+
+## Quoted literal strings
+
+Quoted literal strings are defined as strings of letters that should not be considered parseable Greek words. One example might be the scholion talking about the use of the letter sigma. We do not want the machine to treat a single sigma as a Greek word so use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizontal bars that denote numbers and you have to determine from context. The neuter article, prepositions, and other vocabulary related to writing will be your clue.
+
+[![waw][waw]][300]
+
+Example:
+
+`<rs type="waw">ν</rs>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
+
+[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=8000&CVT=JPEG
+
+[300]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.697,0.1548,0.018,0.0195
+
+
+
 ## Scribal Deletions ##
 
 Use TEI `del` when the scribe has either crossed out content, erased, or marked it with "deletion dots"
@@ -42,9 +81,12 @@ Example:
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
-## Scribal Corrections ##
 
-Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
+
+
+## Scribal Corrections
+
+Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.
 
 [![correction][corr]][105]
 
@@ -123,7 +165,7 @@ Examples:
 [108]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
 
 
-### Abbreviations that Require Mark up ###
+### Abbreviations that Require Mark up
 
 **paleographically ambiguous abbreviations**
 
@@ -154,19 +196,3 @@ Example:
 [pater]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.3183,0.293,0.045,0.024&WID=8000&CVT=JPEG
 
 [110]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
-
-## Numbers ##
-
-Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
-
-[![number][number]][602]
-
-`<num value="50">ν</num>`
-
-(urn:cts:greekLit:tlg5026.msA.hmt:1.42)
-
-[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
-
-[602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
-
-note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.

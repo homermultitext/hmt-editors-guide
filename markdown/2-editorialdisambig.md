@@ -1,6 +1,6 @@
-# Tier 3: Editorial disambiguation #
+# Tier 3: Semantic disambiguation
 
-Tier 3 disambiguates the text on an editorial level. This class of mark up is primarily named entities.
+Tier 3 semantically disambiguates tokens. This class of mark up is primarily named entities.
 
 ## Named entities (proper nouns and adjectives) ##
 
@@ -83,7 +83,7 @@ Example:
 
 `<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
 
-(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)    
+(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
