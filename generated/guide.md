@@ -166,14 +166,21 @@ Example:
 
 # Tier 2: Tokenization
 
-Editors subdivide their transcribed text into tokens, and explicitly or implicitly classify each token as either lexical, numeric, punctutaion, unintelligible or a literal string of characters.
+Editors must subdivide their transcribed text into tokens, and explicitly or implicitly classify each token as one of the following types:
 
-Print editions typically imply tokenization of all types by separating them with white space or punctuation characters.  In HMT editions,
+-   lexical type (a "word")
+-   numeric type (normally written with alphabetic characters in Milesian notation)
+-   punctuation
+-   unintelligible
+-   literal string of characters
 
-The tokenization tier disambiguates our edition at the word level. Typically a machine can read tokens by splitting at white space. However, there are a few exceptions that require mark up.
+While print editions typically imply tokenization of all types by separating them with white space or punctuation characters, the use of space and punctuation in Byzantine manuscripts is not a rigidly consistent guide to tokenization, so HMT editors must deliberately distinguish tokens in their transcribed text.  For automated processing, punctuation tokens can be distinguished by their unique character set, and so require no markup.  Lexical tokens are the default type, and require no further markup if a token is unambiguously bounded by white space or punctuation.  Other tokens always require markup, as explained next.
 
 ## Lexical tokens
 
+If a lexical token is paleographically clear, editors should use white space to separate it from adjacent lexical tokens.  White space is not necessary if the adjacent token is a punctuation charater.
+
+If parts of a lexical token are unclear or include gaps, however, XML processors are free to separate the literal text of the clear readings from text included in
 There are a few cases where we cannot rely on whitespace to split our tokens because of other TEI mark up.
 
 **paleographic clarity**
@@ -520,9 +527,9 @@ Example:
 
 Alternative readings are typically strings of characters or even single letters. You will use the whole word like in the example above.
 
-# Tier 4: Discourse disambiguation #
+# Tier 4: Discourse disambiguation
 
-### Quotation and citation ###
+### Quotation and citation
 
 **unidentified quoted words, phrases, or passages**
 
