@@ -2,7 +2,12 @@
 
 This repository contains markdown source for building the Homer Multitext project's guide for contributors.
 
-A pdf of the current version (built from this source) is available from our summer seminar web site: <https://github.com/homermultitext/hmt-editors-guide/issues/20>
+A current composite document in markdown format is included in this repository in [generated/guide.md](generated/guide.md).
+
+
+If you find errors or omissions, or have questions about unclear sections of the guide, please post an issue on the project issue tracker:  <https://github.com/homermultitext/hmt-editors-guide/issues>
+
+
 
 
 ## Earlier versions

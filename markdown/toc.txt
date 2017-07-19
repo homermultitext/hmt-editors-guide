@@ -1,5 +1,6 @@
 intro.md
 0-transcription.md
-1-tokenization.md
+1a-tokenization.md
+1b-scribalinterventioin.md
 2-editorialdisambig.md
 3-discoursedisambig.md
