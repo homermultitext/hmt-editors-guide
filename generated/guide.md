@@ -1,21 +1,34 @@
 # Homer Multitext project: guide for editors
 
-This document describes the HMT project's use of TEI XML in the summer of 2017.
+This document describes the HMT project's use of TEI XML in the summer of 2017.  All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: for citable nodes, `l` for lines of poetic text, and `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.
 
-# Tier 1: Transcription #
 
-The transcription tier handles issues of paleographic status. Is a reading clear? How do we transcribe the specific orthographic choices of the manuscript? What belongs in the text edition and what is recorded elsewhere.
+The focus of this document is our usage of TEI *within* those citable nodes, to document the contents of our editions.  The order of sections describes our markup practice from "inside to out":  when elements co-occur, the element described first in this document (and so, innermost) will be wrapped by the element described later (outermost).  The major sections are:
 
-## What doesn't belong in a text edition? ##
 
-Text editions of the *Iliad* or scholia texts should not contain anything in the following categories:
-1. critical signs: located next to the Iliadic lines in the Venetus A
-2. connecting signs: sometimes written next to scholia and corresponding main text
-3. metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
+1.   transcription of the main text
+2.   tokenization the main text
+3.   semantic disambiguation of named entities and abbreviations
+4.   scribal intervention in the text
+5.   editorial identification of the voice of the text
 
-## Orthography ##
+All editorial activity at every level involves scholarly judgments, and the clean separation suggested by this scheme is to some degree artificial:  nevertheless, we hope this schema will be helpful in guiding editors to follow the HMT project's editorial principles as they exercise their best judgment.
 
-Regarding the following issues of orthography, we have very specific conventions for how to display them in Unicode. These examples are unambiguous and therefore do require mark up. We do, however, want to be consistent in how we handle them in our editions.
+# Tier 1: Diplomatic transcription
+
+The first task of HMT editors is to transcribe the text as they read it on the manuscript.  Editors must understand what belongs in a text edition, what character set to use in transcribing the text, and how to encode the paleographic status of a reading.
+
+## What doesn't belong in a text edition?
+
+Text editions of the *Iliad* or scholia texts should *not* contain anything in the following categories:
+
+1.  critical signs: located next to the Iliadic lines in the Venetus A
+2.  connecting signs: sometimes written next to scholia and corresponding main text
+3.  metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
+
+## Orthography and digital character set
+
+Texts should be transcribed using a specified subset of the Unicode character set.
 
 **accentuation and breathings**
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
@@ -35,7 +48,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. See more on variant letter forms under abbreviations.
 
 
-## Diacritical Marks ##
+### Diacritical Marks
 
 Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
 
@@ -92,13 +105,28 @@ Example: μετα δ`᾽ ἔσσεται
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-## Paleographic Status ##
+** Punctuation Used **
+
+
+When editing manuscripts, it is important to remember that punctuation is an important part of producing a diplomatic edition. Some easy places to forget about punctuation and other similar graphemes include: the end of Iliadic lines, the crosses at the beginning of lemmata , the various forms of punctuation or lack thereof at the end of lemmata, and punctuation at the end of scholia.
+
+period: .
+high stop: ·
+comma: ,
+colon: :
+end of scholion: ⁑
+cross: ‡
+
+You should only find end-of-scholion markers and the cross in scholia.
+
+
+## Paleographic status
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
-1. *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
-2. *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
-3. *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
+1.  *clear*.  The letter is unambiguously legible, based on paleographic considerations alone.  It may be incompletely preserved, but the visible remains cannot be read as any other character.
+2.  *unclear*. Part of the letter is visible, but taken by itself cannot be unambiguously read. That is **paleographically** ambiguous. You might be able to make an educated guess, but that is not a diplomatic edition.
+3.  *missing*.  No trace of the letter remains, but it is clear from the context that one or more letters were originally present. This occurs in instances where there is damage to the manuscript such as a [hole][hole] or extreme [fading][fading], even in [specialized lighting][uv].
 
 [hole]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA044VN-0546@0.24,0.7506,0.065,0.0729
 
@@ -112,7 +140,7 @@ Enter the text with no additional markup
 
 **Unclear readings**
 
-Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
+Use TEI `unclear` element.  If the `unclear` element breaks up a lexical token or numeric token, wrap the entire word  in a TEI `w` element or `num`:  see the following section on "Tokenization" for more details. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and need not be included.
 
 [![unclear][unclear]][100]
 
@@ -136,11 +164,15 @@ Example:
 
 `<gap unit="letters" extent="3"/>`
 
-# Tier 2: Tokenization #
+# Tier 2: Tokenization
+
+Editors subdivide their transcribed text into tokens, and explicitly or implicitly classify each token as either lexical, numeric, punctutaion, unintelligible or a literal string of characters.
+
+Print editions typically imply tokenization of all types by separating them with white space or punctuation characters.  In HMT editions,
 
 The tokenization tier disambiguates our edition at the word level. Typically a machine can read tokens by splitting at white space. However, there are a few exceptions that require mark up.
 
-## Word ##
+## Lexical tokens
 
 There are a few cases where we cannot rely on whitespace to split our tokens because of other TEI mark up.
 
@@ -166,6 +198,45 @@ Example:
 
 In cases where the addition does not split a word, you would not need to use `w`
 
+
+
+
+## Numbers
+
+Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
+
+[![number][number]][602]
+
+`<num value="50">ν</num>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.42)
+
+[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
+
+[602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
+
+note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
+
+
+
+## Quoted literal strings
+
+Quoted literal strings are defined as strings of letters that should not be considered parseable Greek words. One example might be the scholion talking about the use of the letter sigma. We do not want the machine to treat a single sigma as a Greek word so use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizontal bars that denote numbers and you have to determine from context. The neuter article, prepositions, and other vocabulary related to writing will be your clue.
+
+[![waw][waw]][300]
+
+Example:
+
+`<rs type="waw">ν</rs>`
+
+(urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
+
+[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=8000&CVT=JPEG
+
+[300]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.697,0.1548,0.018,0.0195
+
+
+
 ## Scribal Deletions ##
 
 Use TEI `del` when the scribe has either crossed out content, erased, or marked it with "deletion dots"
@@ -180,9 +251,12 @@ Example:
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
-## Scribal Corrections ##
 
-Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.  
+
+
+## Scribal Corrections
+
+Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.
 
 [![correction][corr]][105]
 
@@ -226,7 +300,7 @@ Alternative readings are typically strings of characters or even single letters.
 
 **Regular terminating syllables**
 
-Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the [paleography guide](http://homermultitext.github.io/hmt-docs/palguide.pdf) if you are unfamiliar with the common abbreviations.
+Regular terminating syllables (often morphological endings, but not always appearing at the end of a word) are treated as a variant letter form, and are not specially marked in any way. See the [paleography guide](http://homermultitext.github.io/hmt-docs/palguide.pdf) if you are unfamiliar with the common abbreviations. If accents or other diacritical marks should be present on the abbreviated syllable(s), they can be supplied in the expansion.
 
 [![Abbreviate -os][os]][106]
 
@@ -240,7 +314,7 @@ Example:
 
 **Symbol Abbreviations**
 
-Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinquishable letter forms.
+Regular abbreviated forms of the whole words (e.g. καί, ὅτι, δέ, γάρ, διά, etc.) are treated as variant letter forms, and are not specially marked in any way. The rule of thumb for determining if it is a symbol abbreviation is if the symbol cannot be completely broken down into distinguishable letter forms. If accents or other diacritical marks should be present on the abbreviated word, they can be supplied in the expansion.
 
 Examples:
 
@@ -261,11 +335,11 @@ Examples:
 [108]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.6517,0.4711,0.02,0.0158
 
 
-### Abbreviations that Require Mark up ###
+### Abbreviations that Require Mark up
 
 **paleographically ambiguous abbreviations**
 
-Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up.
+Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up. If accents or other diacritical marks should be present on the abbreviated syllable(s), they can be supplied in the expansion.
 
 - Use the TEI `abbr/expan` pair, wrapped in `choice`
 
@@ -293,25 +367,9 @@ Example:
 
 [110]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
 
-## Numbers ##
+# Tier 3: Semantic disambiguation
 
-Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
-
-[![number][number]][602]
-
-`<num value="50">ν</num>`
-
-(urn:cts:greekLit:tlg5026.msA.hmt:1.42)
-
-[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
-
-[602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
-
-note: Remember that Dindorf and Erbse will typically take a Milesian numeral and write the full Greek word, but we want a fully diplomatic edition. Also remember that book numbers are treated as titles, not numbers in TEI.
-
-# Tier 3: Editorial disambiguation #
-
-Tier 3 disambiguates the text on an editorial level. This class of mark up is primarily named entities.
+Tier 3 semantically disambiguates tokens. This class of mark up is primarily named entities.
 
 ## Named entities (proper nouns and adjectives) ##
 
@@ -394,13 +452,73 @@ Example:
 
 `<rs type="astro" n="urn:cite:hmt:astro.1">Ὠρίωνος</rs>`
 
-(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)    
+(urn:cts:greekLit:tlg0012.tlg001.msA:18.486)
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
 [Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=8000&CVT=JPEG
 
 [505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323
+
+# Tier 3: Scribal intervention in the text
+
+
+## Scribal Deletions ##
+
+Use TEI `del` when the scribe has either crossed out content, erased, or marked it with "deletion dots"
+
+[![deletion][deletion]][102]
+
+Example:
+
+`<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>` (urn:cts:greekLit:tlg5026.msA.hmt:9.193)
+
+[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=8000&CVT=JPEG
+
+[102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
+
+
+
+
+## Scribal Corrections
+
+Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.
+
+[![correction][corr]][105]
+
+
+Example: accent corrected by the original scribe
+
+`<choice><sic>προσηῦδα</sic><corr>προσηύδα</corr></choice>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.337)
+
+[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=8000&CVT=JPEG
+
+[105]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
+
+Please note that this mark up is *only* used by corrections we believe were made by the scribe. That means you cannot offer your own corrections and the scribe could be wrong by our orthographic standards. This is a diplomatic editions and we do not want to make our own judges on grammatical correctness at this stage of editing.
+
+
+## Scribal Multiforms ##
+
+Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
+
+Example:
+
+`<choice><orig>μεθειέμεν</orig><reg>μεθιέμεν</reg></choice>`
+
+(urn:cts:greekLit:tlg0012.tlg001.msA:4.351)
+
+
+[![alternative text][alt]][104]
+
+[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=8000&CVT=JPEG
+
+
+[104]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
+
+Alternative readings are typically strings of characters or even single letters. You will use the whole word like in the example above.
 
 # Tier 4: Discourse disambiguation #
 
@@ -437,22 +555,6 @@ Example:
 [quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=8000&CVT=JPEG
 
 [111]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
-
-**quoted strings**
-
-Quoted strings are defined as strings of letters that should not be considered parseable Greek words. One example might be the scholion talking about the use of the letter sigma. We do not want the machine to treat a single sigma as a Greek word so use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizontal bars that denote numbers and you have to determine from context. The neuter article, prepositions, and other vocabulary related to writing will be your clue.
-
-[![waw][waw]][300]
-
-Example:
-
-`<rs type="waw">ν</rs>`
-
-(urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
-
-[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=8000&CVT=JPEG
-
-[300]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.697,0.1548,0.018,0.0195
 
 
 ## Other Discourse Analysis ##
