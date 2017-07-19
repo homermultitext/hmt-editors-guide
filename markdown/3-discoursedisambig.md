@@ -1,6 +1,6 @@
-# Tier 4: Discourse disambiguation #
+# Tier 4: Discourse disambiguation
 
-### Quotation and citation ###
+### Quotation and citation
 
 **unidentified quoted words, phrases, or passages**
 
