@@ -1,17 +1,18 @@
-# Tier 1: Transcription
+# Tier 1: Diplomatic transcription
 
-The transcription tier handles issues of paleographic status. Is a reading clear? How do we transcribe the specific orthographic choices of the manuscript? What belongs in the text edition and what is recorded elsewhere.
+The first task of HMT editors is to transcribe the text as they read it on the manuscript.  Editors must understand what belongs in a text edition, what character set to use in transcribing the text, and how to encode the paleographic status of a reading.
 
 ## What doesn't belong in a text edition?
 
-Text editions of the *Iliad* or scholia texts should not contain anything in the following categories:
-1. critical signs: located next to the Iliadic lines in the Venetus A
-2. connecting signs: sometimes written next to scholia and corresponding main text
-3. metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
+Text editions of the *Iliad* or scholia texts should *not* contain anything in the following categories:
+
+1.  critical signs: located next to the Iliadic lines in the Venetus A
+2.  connecting signs: sometimes written next to scholia and corresponding main text
+3.  metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
 
 ## Orthography and digital character set
 
-Regarding the following issues of orthography, we have very specific conventions for how to display them in Unicode. These examples are unambiguous and therefore do require mark up. We do, however, want to be consistent in how we handle them in our editions.
+Texts should be transcribed using a specified subset of the Unicode character set.
 
 **accentuation and breathings**
 :	We record all accents and breathings as given in the manuscript (not "corrected" to modern usage).  This category includes diaeresis, and markings for short or long vowel quantities (breve and macron).
