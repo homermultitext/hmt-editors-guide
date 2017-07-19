@@ -31,7 +31,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. See more on variant letter forms under abbreviations.
 
 
-## Diacritical Marks
+### Diacritical Marks
 
 Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
 
@@ -88,7 +88,22 @@ Example: μετα δ`᾽ ἔσσεται
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
-## Paleographic Status
+** Punctuation Used **
+
+
+When editing manuscripts, it is important to remember that punctuation is an important part of producing a diplomatic edition. Some easy places to forget about punctuation and other similar graphemes include: the end of Iliadic lines, the crosses at the beginning of lemmata , the various forms of punctuation or lack thereof at the end of lemmata, and punctuation at the end of scholia.
+
+period: .
+high stop: ·
+comma: ,
+colon: :
+end of scholion: ⁑
+cross: ‡
+
+You should only find end-of-scholion markers and the cross in scholia.
+
+
+## Paleographic status
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
@@ -108,7 +123,7 @@ Enter the text with no additional markup
 
 **Unclear readings**
 
-Use TEI `unclear` element.  If the `unclear` element breaks up a word token, wrap the entire work  in a TEI `w` element. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and should not be included.
+Use TEI `unclear` element.  If the `unclear` element breaks up a lexical token or numeric token, wrap the entire word  in a TEI `w` element or `num`:  see the following section on "Tokenization" for more details. Note that `w` is only necessary if the word is broken up. If a whole word is unclear, `w` is not necessary and need not be included.
 
 [![unclear][unclear]][100]
 

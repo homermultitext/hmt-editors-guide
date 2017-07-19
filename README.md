@@ -9,6 +9,10 @@ If you find errors or omissions, or have questions about unclear sections of the
 
 
 
+## Generating a fresh composite
+
+
+
 
 ## Earlier versions
 
