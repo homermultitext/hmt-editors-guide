@@ -11,6 +11,14 @@ If you find errors or omissions, or have questions about unclear sections of the
 
 ## Generating a fresh composite
 
+The composite file is composed from several smaller source files.  The repository includes a scala script that stitches them together, and embeds images cataloged in a separate table.
+
+To generate a newz composite markdown file, start an `sbt console`, and from the console, load and run the script as follows:
+
+
+    :load builder.sc
+    GuideBuilder.writeGuide
+
 
 
 
