@@ -1,8 +1,8 @@
-# Tier 1: Diplomatic transcription
+## 1: Diplomatic transcription
 
 The first task of HMT editors is to transcribe the text as they read it on the manuscript.  Editors must understand what belongs in a text edition, what character set to use in transcribing the text, and how to encode the paleographic status of a reading.
 
-## What doesn't belong in a text edition?
+### What doesn't belong in a text edition?
 
 Text editions of the *Iliad* or scholia texts should *not* contain anything in the following categories:
 
@@ -10,7 +10,7 @@ Text editions of the *Iliad* or scholia texts should *not* contain anything in t
 2.  connecting signs: sometimes written next to scholia and corresponding main text
 3.  metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
 
-## Orthography and digital character set
+### Orthography and digital character set
 
 Texts should be transcribed using a specified subset of the Unicode character set.
 
@@ -24,7 +24,7 @@ Texts should be transcribed using a specified subset of the Unicode character se
 
 [200]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.501,0.2434,0.058,0.027
 
-[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG
+[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=100&CVT=JPEG
 
 Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 
@@ -32,7 +32,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. See more on variant letter forms under abbreviations.
 
 
-### Diacritical Marks
+#### Diacritical Marks
 
 Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
 
@@ -42,7 +42,7 @@ Most Greek keyboards are not able to handle more than two diacritical marks, so 
 
 Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
-[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
+[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=100&CVT=JPEG
 
 [1]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
 
@@ -56,7 +56,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 [2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
 
-[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
+[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=100&CVT=JPEG
 
 **brevia** should use Unicode "Combining Breve" character
 
@@ -70,7 +70,7 @@ Of the many possible Unicode characters for elision, use only Unicode straight s
 
 Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
-[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=8000&CVT=JPEG
+[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=100&CVT=JPEG
 
 [4]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
@@ -85,7 +85,7 @@ Floating grave accents in the manuscript can appear on an elided syllable.
 Example: μετα δ`᾽ ἔσσεται
 (urn:cts:greekLit:tlg0012.tlg001.msA:9.131)
 
-[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=8000&CVT=JPEG
+[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=100&CVT=JPEG
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
@@ -104,7 +104,7 @@ cross: ‡
 You should only find end-of-scholion markers and the cross in scholia.
 
 
-## Paleographic status
+### Paleographic status
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
@@ -138,7 +138,7 @@ Example:
 [100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
 
 
-[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=8000&CVT=JPEG
+[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=100&CVT=JPEG
 
 
 **Missing**
@@ -147,3 +147,8 @@ Use TEI `gap` element.  Use `@unit` attribute for  the type of the gap (for exam
 Example:
 
 `<gap unit="letters" extent="3"/>`
+
+
+### Scribal modifications
+
+(For markup of more extensive scribal interventions in the text, see section 4.)

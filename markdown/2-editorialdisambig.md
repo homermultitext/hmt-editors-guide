@@ -1,4 +1,4 @@
-# Tier 3: Semantic disambiguation
+## 3: Semantic disambiguation
 
 Tier 3 semantically disambiguates tokens. This class of mark up is primarily named entities.
 
@@ -16,7 +16,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.58)
 
-[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=8000&CVT=JPEG
+[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=100&CVT=JPEG
 
 [500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.488,0.2915,0.063,0.0263
 
@@ -30,7 +30,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.17)
 
-[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=8000&CVT=JPEG
+[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=100&CVT=JPEG
 
 [501]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263
 
@@ -46,7 +46,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.30)
 
-[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=8000&CVT=JPEG
+[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=100&CVT=JPEG
 
 [503]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293
 
@@ -69,7 +69,7 @@ Example:
 - Adjectival forms of people's names are also not tagged (ergo, we can tag 'Homer' but not 'Homeric')
 - We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not. If you are in doubt, refer to the description of the indiviual in the authority list. If the epithet is not listed there, you can request it, via Issue Tracker and our editorial guide team can render a judgement.
 
-[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=8000&CVT=JPEG
+[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=100&CVT=JPEG
 
 [504]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027
 
@@ -87,6 +87,6 @@ Example:
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
-[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=8000&CVT=JPEG
+[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=100&CVT=JPEG
 
 [505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323

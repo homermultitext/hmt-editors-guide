@@ -1,4 +1,4 @@
-# Tier 4: Discourse disambiguation
+## 5: Discourse disambiguation
 
 ### Quotation and citation
 
@@ -14,7 +14,7 @@ Example:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
 
-[q1]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.709,0.154,0.04,0.0188&WID=8000&CVT=JPEG
+[q1]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.709,0.154,0.04,0.0188&WID=100&CVT=JPEG
 
 [400]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.709,0.154,0.04,0.0188
 
@@ -30,12 +30,12 @@ Example:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:4.8)
 
-[quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=8000&CVT=JPEG
+[quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=100&CVT=JPEG
 
 [111]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
 
 
-## Other Discourse Analysis ##
+### Other Discourse Analysis ##
 
 **titles**
 
@@ -63,16 +63,3 @@ Example:
 `<title n="urn:cite2:hmt:citedworks:work2">Κυπρία</title>`
 
 Like the named entities, new citable works can be proposed using the Issue Tracker on the authority list repository.
-
-**lists**
-
-When text is arranged in a list format (see [example](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA315VN-0817@0.157,0.1772,0.281,0.0713)), use TEI element `list` with each line of the list in the element `item`. Items can be numbered (if they are numbered in your text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
-
-Full mark up could look something like this:
-
-`<list>`
-   `<item>πέπλος· ὅν περονῶνται γυναῖκες· ὃς καὶ εανὸς καλεῖται:</item>`
-    `<item>χιτών ἀνδρεῖον ἔνδυμα</item>`
-     `<item>φᾶρος ϊματιον ἀνδρῶν και γυναικῶν·</item>`
-      `<item>χλαίνη τὸ περίβλημα τῆς κλίνης:</item>`
-`</list>`
