@@ -1,9 +1,16 @@
-# Homer Multitext project: guide for editors
+# Homer Multitext project: guide to XML usage for editors
 
-This document describes the HMT project's use of TEI XML in the summer of 2017.  All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: for citable nodes, `l` for lines of poetic text, and `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.
+## Introduction
+
+This document describes the HMT project's use of TEI XML in the summer of 2017.  All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: citable nodes are either `l` for lines of poetic text, or `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.  Each element corresponding to a level of the citation hierarchy has an `@n` attribute giving identifying value for that part of the text.  *Iliad* 10.1, for example, would be contained in a `div` element with `@n` attribute of `10`, and a `l` element with a value of `1`.
+
+If the text of a scholion explicitly organizes material in a table or list structure, we use TEI `list` with `item` elements.  These are the only TEI elements we need to capture the basic structure of our diplomatic editions.
 
 
-The focus of this document is our usage of TEI *within* those citable nodes, to document the contents of our editions.  The order of sections describes our markup practice from "inside to out":  when elements co-occur, the element described first in this document (and so, innermost) will be wrapped by the element described later (outermost).  The major sections are:
+>Example:  see an example of a [list structure in a scholion](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779). Items can be numbered (if they are numbered in the text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+
+
+The focus of this document is our usage of TEI markup *within* those citable nodes, that is, how we document the contents of our citable nodes.  The order of sections describes our markup practice from "inside to out":  when elements co-occur, the element described first in this document (and so, innermost) will be wrapped by the element described later (outermost).  The major sections are:
 
 
 1.   transcription of the main text
@@ -14,11 +21,11 @@ The focus of this document is our usage of TEI *within* those citable nodes, to 
 
 All editorial activity at every level involves scholarly judgments, and the clean separation suggested by this scheme is to some degree artificial:  nevertheless, we hope this schema will be helpful in guiding editors to follow the HMT project's editorial principles as they exercise their best judgment.
 
-# Tier 1: Diplomatic transcription
+## 1: Diplomatic transcription
 
 The first task of HMT editors is to transcribe the text as they read it on the manuscript.  Editors must understand what belongs in a text edition, what character set to use in transcribing the text, and how to encode the paleographic status of a reading.
 
-## What doesn't belong in a text edition?
+### What doesn't belong in a text edition?
 
 Text editions of the *Iliad* or scholia texts should *not* contain anything in the following categories:
 
@@ -26,7 +33,7 @@ Text editions of the *Iliad* or scholia texts should *not* contain anything in t
 2.  connecting signs: sometimes written next to scholia and corresponding main text
 3.  metacomments: numerical or other symbolic notation that further explains the text (e.g. reordered lines)
 
-## Orthography and digital character set
+### Orthography and digital character set
 
 Texts should be transcribed using a specified subset of the Unicode character set.
 
@@ -40,7 +47,7 @@ Texts should be transcribed using a specified subset of the Unicode character se
 
 [200]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.501,0.2434,0.058,0.027
 
-[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=8000&CVT=JPEG
+[subscript]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.501,0.2434,0.058,0.027&WID=100&CVT=JPEG
 
 Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 
@@ -48,7 +55,7 @@ Example: καλῇ (urn:cts:greekLit:tlg0012.tlg001.msA:1.604)
 : Our transcription does not  note ligatures or variant letter forms: readers interested in these visual features of the manuscript should consult the associated high-resolution images.  We treat regular abbreviations for morphological endings, for prepositions, and for the conjunction καί as variant letter forms, and silently expand these in the transcriptions. See more on variant letter forms under abbreviations.
 
 
-### Diacritical Marks
+#### Diacritical Marks
 
 Most Greek keyboards are not able to handle more than two diacritical marks, so in instances where you need and accent, breathing, and a diacritical mark, use combining characters which are typically found in special character menus in most basic text editors.
 
@@ -58,7 +65,7 @@ Most Greek keyboards are not able to handle more than two diacritical marks, so 
 
 Example:  ί̈σχειν (urn:cts:greekLit:tlg0012.tlg001.msA:9.352)
 
-[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=8000&CVT=JPEG
+[diaeresis]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA118VN-0621.tif&RGN=0.4855,0.5409,0.0721,0.0301&WID=100&CVT=JPEG
 
 [1]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA118VN-0621@0.4855,0.5409,0.0721,0.0301
 
@@ -72,7 +79,7 @@ Example: δαίνῡ {urn:cts:greekLit:tlg0012.tlg001.msA:9.70)
 
 [2]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA113RN-0285@0.1832,0.4222,0.0741,0.0233
 
-[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=8000&CVT=JPEG
+[macron]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA113RN-0285.tif&RGN=0.1832,0.4222,0.0741,0.0233&WID=100&CVT=JPEG
 
 **brevia** should use Unicode "Combining Breve" character
 
@@ -86,7 +93,7 @@ Of the many possible Unicode characters for elision, use only Unicode straight s
 
 Example: ἄλλ' ἐν (urn:cts:greekLit:tlg0012.tlg001.msA:9.235)
 
-[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=8000&CVT=JPEG
+[elision]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA116VN-0619.tif&RGN=0.5485,0.2201,0.0561,0.0278&WID=100&CVT=JPEG
 
 [4]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA116VN-0619@0.5485,0.2201,0.0561,0.0278
 
@@ -101,7 +108,7 @@ Floating grave accents in the manuscript can appear on an elided syllable.
 Example: μετα δ`᾽ ἔσσεται
 (urn:cts:greekLit:tlg0012.tlg001.msA:9.131)
 
-[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=8000&CVT=JPEG
+[float]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA114RN-0286.tif&RGN=0.3333,0.6371,0.1221,0.0233&WID=100&CVT=JPEG
 
 [5]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA114RN-0286@0.3333,0.6371,0.1221,0.0233
 
@@ -120,7 +127,7 @@ cross: ‡
 You should only find end-of-scholion markers and the cross in scholia.
 
 
-## Paleographic status
+### Paleographic status
 
 While readers always take many kinds of contextual information into consideration when reading a text, HMT editors should distinguish three levels of legibility based solely on the paleographic clarity of the reading.
 
@@ -154,7 +161,7 @@ Example:
 [100]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA104RN-0105@0.5386,0.1585,0.0224,0.0174
 
 
-[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=8000&CVT=JPEG
+[unclear]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA104RN-0105.tif&RGN=0.5386,0.1585,0.0224,0.0174&WID=100&CVT=JPEG
 
 
 **Missing**
@@ -164,7 +171,12 @@ Example:
 
 `<gap unit="letters" extent="3"/>`
 
-# Tier 2: Tokenization
+
+### Scribal modifications
+
+(For markup of more extensive scribal interventions in the text, see section 4.)
+
+## 2: Tokenization
 
 Editors must subdivide their transcribed text into tokens, and explicitly or implicitly classify each token as one of the following types:
 
@@ -176,7 +188,7 @@ Editors must subdivide their transcribed text into tokens, and explicitly or imp
 
 While print editions typically imply tokenization of all types by separating them with white space or punctuation characters, the use of space and punctuation in Byzantine manuscripts is not a rigidly consistent guide to tokenization, so HMT editors must deliberately distinguish tokens in their transcribed text.  For automated processing, punctuation tokens can be distinguished by their unique character set, and so require no markup.  Lexical tokens are the default type, and require no further markup if a token is unambiguously bounded by white space or punctuation.  Other tokens always require markup, as explained next.
 
-## Lexical tokens
+### Lexical tokens
 
 If a lexical token is paleographically clear, editors should use white space to separate it from adjacent lexical tokens.  White space is not necessary if the adjacent token is a punctuation charater.
 
@@ -185,7 +197,9 @@ There are a few cases where we cannot rely on whitespace to split our tokens bec
 
 **paleographic clarity**
 
-As seen on the transcription level, `gap` and `unclear` can sometimes split words. In these situations the whole word needs to be explicitly wrap in the `w` element so that our edition remains machine-readable.
+As previously noted, transcribing a text can sometimes split lexical tokens with `gap` or `unclear`. In these situations, the whole word needs to be explicitly wrapped in the `w` ("word") element so that the contents can be recognized as a single token.
+
+
 
 **scribal additions**
 
@@ -201,14 +215,14 @@ Example:
 
 [103]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5045,0.7325,0.031,0.021
 
-[added]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5045,0.7325,0.031,0.021&WID=8000&CVT=JPEG
+[added]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5045,0.7325,0.031,0.021&WID=100&CVT=JPEG
 
 In cases where the addition does not split a word, you would not need to use `w`
 
 
 
 
-## Numbers
+### Numbers
 
 Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizontal bar by the scribe to indicate that they are not lexical content.
 
@@ -218,7 +232,7 @@ Use TEI `num` with `@value` attribute. Numbers are often denoted with a horizont
 
 (urn:cts:greekLit:tlg5026.msA.hmt:1.42)
 
-[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=9000&CVT=JPEG
+[number]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.838,0.7543,0.018,0.0195&WID=100&CVT=JPEG
 
 [602]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.838,0.7543,0.018,0.0195
 
@@ -226,7 +240,7 @@ note: Remember that Dindorf and Erbse will typically take a Milesian numeral and
 
 
 
-## Quoted literal strings
+### Quoted literal strings
 
 Quoted literal strings are defined as strings of letters that should not be considered parseable Greek words. One example might be the scholion talking about the use of the letter sigma. We do not want the machine to treat a single sigma as a Greek word so use TEI `rs` element with `@type` attribute = `waw` ("word-as-word"). Quoted strings are often, but not always, made visually distinct via a horizontal bar. They can be difficult to distinguish from the horizontal bars that denote numbers and you have to determine from context. The neuter article, prepositions, and other vocabulary related to writing will be your clue.
 
@@ -238,13 +252,13 @@ Example:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
 
-[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=8000&CVT=JPEG
+[waw]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.697,0.1548,0.018,0.0195&WID=100&CVT=JPEG
 
 [300]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.697,0.1548,0.018,0.0195
 
 
 
-## Scribal Deletions ##
+## Scribal Deletions
 
 Use TEI `del` when the scribe has either crossed out content, erased, or marked it with "deletion dots"
 
@@ -254,7 +268,7 @@ Example:
 
 `<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>` (urn:cts:greekLit:tlg5026.msA.hmt:9.193)
 
-[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=8000&CVT=JPEG
+[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=100&CVT=JPEG
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
@@ -274,14 +288,14 @@ Example: accent corrected by the original scribe
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:4.337)
 
-[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=8000&CVT=JPEG
+[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=100&CVT=JPEG
 
 [105]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
 
 Please note that this mark up is *only* used by corrections we believe were made by the scribe. That means you cannot offer your own corrections and the scribe could be wrong by our orthographic standards. This is a diplomatic editions and we do not want to make our own judges on grammatical correctness at this stage of editing.
 
 
-## Scribal Multiforms ##
+## Scribal Multiforms
 
 Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
@@ -294,16 +308,16 @@ Example:
 
 [![alternative text][alt]][104]
 
-[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=8000&CVT=JPEG
+[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=100&CVT=JPEG
 
 
 [104]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
 
 Alternative readings are typically strings of characters or even single letters. You will use the whole word like in the example above.
 
-## Abbreviations ##
+## Abbreviations
 
-### Abbreviations without mark up ###
+### Abbreviations without mark up
 
 **Regular terminating syllables**
 
@@ -317,7 +331,7 @@ Example:
 
 [106]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.7755,0.4663,0.0263,0.0159
 
-[os]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.7755,0.4663,0.0263,0.0159&WID=8000&CVT=JPEG
+[os]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.7755,0.4663,0.0263,0.0159&WID=100&CVT=JPEG
 
 **Symbol Abbreviations**
 
@@ -333,9 +347,9 @@ Examples:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:4.8)
 
-[oti]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.6517,0.4711,0.02,0.0158&WID=8000&CVT=JPEG
+[oti]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.6517,0.4711,0.02,0.0158&WID=100&CVT=JPEG
 
-[kai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA056RN-0057.tif&RGN=0.621,0.5696,0.0152,0.0137&WID=8000&CVT=JPEG
+[kai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA056RN-0057.tif&RGN=0.621,0.5696,0.0152,0.0137&WID=100&CVT=JPEG
 
 [107]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA056RN-0057@0.621,0.5696,0.0152,0.0137
 
@@ -348,7 +362,7 @@ Examples:
 
 Unlike the examples above, the marks that denote these abbreviations do not always indicate the same missing letters. Therefore, because they are paleographically ambiguous, they require mark up. If accents or other diacritical marks should be present on the abbreviated syllable(s), they can be supplied in the expansion.
 
-- Use the TEI `abbr/expan` pair, wrapped in `choice`
+-   Use the TEI `abbr/expan` pair, wrapped in `choice`
 
 [![abbreviation][houtos]][109]
 
@@ -360,7 +374,7 @@ Example:
 
 [109]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.453,0.7399,0.0224,0.0135
 
-[houtos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.453,0.7399,0.0224,0.0135&WID=8000&CVT=JPEG
+[houtos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.453,0.7399,0.0224,0.0135&WID=100&CVT=JPEG
 
 [![abbr][pater]][110]
 
@@ -370,11 +384,11 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:4.288)
 
-[pater]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.3183,0.293,0.045,0.024&WID=8000&CVT=JPEG
+[pater]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA057RN-0058.tif&RGN=0.3183,0.293,0.045,0.024&WID=100&CVT=JPEG
 
 [110]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA057RN-0058@0.3183,0.293,0.045,0.024
 
-# Tier 3: Semantic disambiguation
+## 3: Semantic disambiguation
 
 Tier 3 semantically disambiguates tokens. This class of mark up is primarily named entities.
 
@@ -392,7 +406,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.58)
 
-[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=8000&CVT=JPEG
+[Achilles]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.488,0.2915,0.063,0.0263&WID=100&CVT=JPEG
 
 [500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.488,0.2915,0.063,0.0263
 
@@ -406,7 +420,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.17)
 
-[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=8000&CVT=JPEG
+[Atreidai]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012RN-0013.tif&RGN=0.1602,0.5465,0.0841,0.0263&WID=100&CVT=JPEG
 
 [501]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012RN-0013@0.1602,0.5465,0.0841,0.0263
 
@@ -422,7 +436,7 @@ Example:
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:1.30)
 
-[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=8000&CVT=JPEG
+[Argos]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA012VN-0514.tif&RGN=0.655,0.2915,0.049,0.0293&WID=100&CVT=JPEG
 
 [503]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA012VN-0514@0.655,0.2915,0.049,0.0293
 
@@ -445,7 +459,7 @@ Example:
 - Adjectival forms of people's names are also not tagged (ergo, we can tag 'Homer' but not 'Homeric')
 - We also do not tag unclear epithets, even if the identity can be determined from context. For example "Phoebus Apollo" is ok, but the "Earthshaker" to refer to Poseidon is not. If you are in doubt, refer to the description of the indiviual in the authority list. If the epithet is not listed there, you can request it, via Issue Tracker and our editorial guide team can render a judgement.
 
-[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=8000&CVT=JPEG
+[Achaious]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA013RN-0014.tif&RGN=0.461,0.426,0.071,0.027&WID=100&CVT=JPEG
 
 [504]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA013RN-0014@0.461,0.426,0.071,0.027
 
@@ -463,14 +477,14 @@ Example:
 
 [astro]: https://github.com/homermultitext/hmt-authlists/blob/master/data/astronomy.csv
 
-[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=8000&CVT=JPEG
+[Orion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA248VN-0750.tif&RGN=0.811,0.3343,0.084,0.0323&WID=100&CVT=JPEG
 
 [505]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA248VN-0750@0.811,0.3343,0.084,0.0323
 
-# Tier 3: Scribal intervention in the text
+## 4: More extensive scribal intervention in the text
 
 
-## Scribal Deletions ##
+### Scribal Deletions
 
 Use TEI `del` when the scribe has either crossed out content, erased, or marked it with "deletion dots"
 
@@ -480,14 +494,14 @@ Example:
 
 `<del>οὐκ εἰς το πρεσβεύειν ἀλλ εἰς τὸ πρεσβεύειν Αἴαντας καὶ Ὀδυσσέα Φοίνικος προέληλυθότος</del>` (urn:cts:greekLit:tlg5026.msA.hmt:9.193)
 
-[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=8000&CVT=JPEG
+[deletion]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA115RN-0287.tif&RGN=0.233,0.7521,0.453,0.027&WID=100&CVT=JPEG
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
 
 
 
-## Scribal Corrections
+### Scribal Corrections
 
 Use TEI `sic/corr` pair for corrections when the wants to correct a reading that is unintelligible in the text;  group the pair in a TEI `choice` element.
 
@@ -500,14 +514,14 @@ Example: accent corrected by the original scribe
 
 (urn:cts:greekLit:tlg0012.tlg001.msA:4.337)
 
-[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=8000&CVT=JPEG
+[corr]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.5245,0.275,0.0871,0.0308&WID=100&CVT=JPEG
 
 [105]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.5245,0.275,0.0871,0.0308
 
 Please note that this mark up is *only* used by corrections we believe were made by the scribe. That means you cannot offer your own corrections and the scribe could be wrong by our orthographic standards. This is a diplomatic editions and we do not want to make our own judges on grammatical correctness at this stage of editing.
 
 
-## Scribal Multiforms ##
+### Scribal Multiforms
 
 Use the TEI `orig/reg` pair to identify the reading in the main text and the alternative reading; group them with TEI `choice`.  The  scribe sometimes writes only the letters that are to be changed to create the alternate reading.  We put the fully expanded word in the `reg` element.
 
@@ -520,14 +534,14 @@ Example:
 
 [![alternative text][alt]][104]
 
-[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=8000&CVT=JPEG
+[alt]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA058RN-0059.tif&RGN=0.3844,0.5364,0.1021,0.0293&WID=100&CVT=JPEG
 
 
 [104]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA058RN-0059@0.3844,0.5364,0.1021,0.0293
 
 Alternative readings are typically strings of characters or even single letters. You will use the whole word like in the example above.
 
-# Tier 4: Discourse disambiguation
+## 5: Discourse disambiguation
 
 ### Quotation and citation
 
@@ -543,7 +557,7 @@ Example:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:1.1498)
 
-[q1]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.709,0.154,0.04,0.0188&WID=8000&CVT=JPEG
+[q1]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA024RN-0025.tif&RGN=0.709,0.154,0.04,0.0188&WID=100&CVT=JPEG
 
 [400]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA024RN-0025@0.709,0.154,0.04,0.0188
 
@@ -559,12 +573,12 @@ Example:
 
 (urn:cts:greekLit:tlg5026.msA.hmt:4.8)
 
-[quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=8000&CVT=JPEG
+[quot]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA051RN-0052.tif&RGN=0.5696,0.5064,0.1552,0.0195&WID=100&CVT=JPEG
 
 [111]:  http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA051RN-0052@0.5696,0.5064,0.1552,0.0195
 
 
-## Other Discourse Analysis ##
+### Other Discourse Analysis ##
 
 **titles**
 
@@ -592,15 +606,3 @@ Example:
 `<title n="urn:cite2:hmt:citedworks:work2">Κυπρία</title>`
 
 Like the named entities, new citable works can be proposed using the Issue Tracker on the authority list repository.
-
-**lists**
-
-When text is arranged in a list format (see [example](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779)), use TEI element `list` with each line of the list in the element `item`. Items can be numbered (if they are numbered in your text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
-
-Full mark up could look something like this:
-
-`<list>`
-`<item>apples</item>`
-`<item>bananas</item>`
-`<item>bread</item>`
-`</list>`
