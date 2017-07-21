@@ -7,7 +7,14 @@ This document describes the HMT project's use of TEI XML in the summer of 2017. 
 If the text of a scholion explicitly organizes material in a table or list structure, we use TEI `list` with `item` elements.  These are the only TEI elements we need to capture the basic structure of our diplomatic editions.
 
 
->Example:  see an example of a [list structure in a scholion](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779). Items can be numbered (if they are numbered in the text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+>Example:  see an example of a [list structure in a scholion](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA315VN-0817@0.157,0.1772,0.281,0.0713). Items can be numbered (if they are numbered in the text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+
+    <list>
+     <item>πέπλος· ὅν περονῶνται γυναῖκες· ὃς καὶ εανὸς καλεῖται:</item>`
+     <item>χιτών ἀνδρεῖον ἔνδυμα</item>
+     <item>φᾶρος ϊματιον ἀνδρῶν και γυναικῶν·</item>
+     <item>χλαίνη τὸ περίβλημα τῆς κλίνης:</item>
+    </list>
 
 
 The focus of this document is our usage of TEI markup *within* those citable nodes, that is, how we document the contents of our citable nodes.  The order of sections describes our markup practice from "inside to out":  when elements co-occur, the element described first in this document (and so, innermost) will be wrapped by the element described later (outermost).  The major sections are:
