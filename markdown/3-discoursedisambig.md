@@ -66,12 +66,13 @@ Like the named entities, new citable works can be proposed using the Issue Track
 
 **lists**
 
-When text is arranged in a list format (see [example](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779)), use TEI element `list` with each line of the list in the element `item`. Items can be numbered (if they are numbered in your text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+When text is arranged in a list format (see [example](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA315VN-0817@0.157,0.1772,0.281,0.0713)), use TEI element `list` with each line of the list in the element `item`. Items can be numbered (if they are numbered in your text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
 
 Full mark up could look something like this:
 
 `<list>`
-`<item>apples</item>`
-`<item>bananas</item>`
-`<item>bread</item>`
+   `<item>πέπλος· ὅν περονῶνται γυναῖκες· ὃς καὶ εανὸς καλεῖται:</item>`
+    `<item>χιτών ἀνδρεῖον ἔνδυμα</item>`
+     `<item>φᾶρος ϊματιον ἀνδρῶν και γυναικῶν·</item>`
+      `<item>χλαίνη τὸ περίβλημα τῆς κλίνης:</item>`
 `</list>`
