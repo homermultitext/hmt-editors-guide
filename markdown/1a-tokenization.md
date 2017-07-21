@@ -94,7 +94,17 @@ Example:
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
+The scribe may also delete a letter or letters within a word. Like `add`, you also need to wrap the whole word in `w` to tokenize it properly. 
 
+[![deletion2][deletion2]][500]
+
+Example:
+
+`<w>κα<del>λ</del>λεῖν</w>`
+
+[deletion2]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA316VN-0818.tif&RGN=0.2936,0.5813,0.037,0.0139&WID=8000&CVT=JPEG
+
+[500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA316VN-0818@0.2936,0.5813,0.037,0.0139
 
 
 ## Scribal Corrections
