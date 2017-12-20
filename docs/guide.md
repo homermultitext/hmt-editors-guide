@@ -1,4 +1,7 @@
-# Homer Multitext project: guide to XML usage for editors
+---
+layout: page
+title: "HMT editor's guide: guide to XML usage for editors"
+---
 
 ## Introduction
 

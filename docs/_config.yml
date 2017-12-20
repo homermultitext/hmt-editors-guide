@@ -1,8 +1,5 @@
 # Dependencies
-markdown:         redcarpet
-redcarpet:
- extensions: ["fenced_code_blocks", "autolink", "tables"]
-pygments:         true
+
 
 # Permalinks
 permalink:        pretty
@@ -17,7 +14,7 @@ baseurl: '/hmt-editors-guide/'
 
 author:
   name:           'Neel Smith'
- 
+
 paginate:         5
 
 links:
@@ -33,5 +30,3 @@ links:
   - title: Github source for this site
     url: https://github.com/homermultitext/hmt-editors-guide
     external: true
-
-   
