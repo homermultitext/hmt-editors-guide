@@ -2,8 +2,7 @@
 
 This repository contains markdown source for building the Homer Multitext project's guide for contributors.
 
-A current composite document in markdown format is included in this repository in [generated/guide.md](generated/guide.md).
-
+A current composite document in markdown format is included in this repository in [generated/guide.md](generated/guide.md), and is published on the web at <https://homermultitext.github.io/hmt-editors-guide/>.
 
 If you find errors or omissions, or have questions about unclear sections of the guide, please post an issue on the project issue tracker:  <https://github.com/homermultitext/hmt-editors-guide/issues>
 
@@ -13,7 +12,7 @@ If you find errors or omissions, or have questions about unclear sections of the
 
 The composite file is composed from several smaller source files.  The repository includes a scala script that stitches them together, and embeds images cataloged in a separate table.
 
-To generate a newz composite markdown file, start an `sbt console`, and from the console, load and run the script as follows:
+To generate a new composite markdown file, start an `sbt console`, and from the console, load and run the script as follows:
 
 
     :load builder.sc
