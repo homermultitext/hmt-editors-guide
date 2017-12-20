@@ -1,0 +1,37 @@
+# Dependencies
+markdown:         redcarpet
+redcarpet:
+ extensions: ["fenced_code_blocks", "autolink", "tables"]
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            'The Homer Multitext project guide for editors'
+tagline:          ''
+description:      ''
+baseurl: '/hmt-editors-guide/'
+
+
+
+author:
+  name:           'Neel Smith'
+ 
+paginate:         5
+
+links:
+  - title: HMT home page
+    url: http://www.homermultitext.org/
+    external: true
+  - title: HMT editors' group
+    url: http://hmteditors.github.io/
+    external: true
+  - title: HMT on github
+    url: http://homermultitext.github.io/
+    external: true
+  - title: Github source for this site
+    url: https://github.com/homermultitext/hmt-editors-guide
+    external: true
+
+   
