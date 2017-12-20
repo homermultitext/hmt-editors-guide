@@ -2,7 +2,10 @@
 
 ## Introduction
 
-This document describes the HMT project's use of TEI XML in the summer of 2017.  All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: citable nodes are either `l` for lines of poetic text, or `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.  Each element corresponding to a level of the citation hierarchy has an `@n` attribute giving identifying value for that part of the text.  *Iliad* 10.1, for example, would be contained in a `div` element with `@n` attribute of `10`, and a `l` element with a value of `1`.
+This document describes the HMT project's use of TEI XML in the summer of 2017.
+
+
+All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: citable nodes are either `l` for lines of poetic text, or `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.  Each element corresponding to a level of the citation hierarchy has an `@n` attribute giving identifying value for that part of the text.  *Iliad* 10.1, for example, would be contained in a `div` element with `@n` attribute of `10`, and a `l` element with a value of `1`.
 
 If the text of a scholion explicitly organizes material in a table or list structure, we use TEI `list` with `item` elements.  These are the only TEI elements we need to capture the basic structure of our diplomatic editions.
 
