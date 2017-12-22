@@ -3,11 +3,32 @@ layout: page
 title: "HMT editor's guide"
 ---
 
-## Current text
 
--  [HMT editor's guide, 2017](guide)
+## Overview
 
-## Versions
+This site gives "how-to" instructions for editors contributing to the Homer Multitext.
+
+
+
+
+
+## Contents
+
+
+-   [citable scholarship](citation)
+-   digital editing
+-   diplomatic editions
+-   modelling content of citable texts
+
+## See also
+
+-   [editorial principles](https://homermultitext.github.io/hmt-editing-principles) guiding these practices
+-   [how to use HMT code libraries](https://homermultitext.github.io/hmt-textmodel) working with these editions
+
+
+## Published versions
+
+-   [HMT editor's guide, 2017](guide)
 
 
 The current published version of the HMT project guide to editorial policy reflects the definition of editorial policies at the beginning of our 2017 summer seminar.
