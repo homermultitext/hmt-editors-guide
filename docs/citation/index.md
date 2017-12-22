@@ -5,13 +5,17 @@ layout: page
 
 
 
- ## Citation
+## Citation
 
 
- ## Citing texts
+## Citing texts
 
 
- ## Citing objects
+## Citing objects
 
 
- ## See also
+## See also
+
+
+-  [editorial principles](https://homermultitext.github.io/hmt-editing-principles/citation) behind these citation practices
+-  [code libraries for citation](https://homermultitext.github.io/hmt-textmodel/citation)
