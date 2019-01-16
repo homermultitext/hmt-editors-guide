@@ -9,12 +9,12 @@ resolvers += Resolver.bintrayRepo("neelsmith", "maven")
 
 libraryDependencies ++= Seq(
 
-  "edu.holycross.shot.cite" %% "xcite" % "2.6.0",
-  "edu.holycross.shot" %% "scm" % "4.1.1",
-  "edu.holycross.shot" %% "ohco2" % "9.1.0",
-  "edu.holycross.shot" %% "citeobj" % "3.1.3",
-  "edu.holycross.shot" %% "citerelations" % "1.1.1",
+  "edu.holycross.shot.cite" %% "xcite" % "3.7.0",
+  "edu.holycross.shot" %% "scm" % "6.2.0",
+  "edu.holycross.shot" %% "ohco2" % "10.11.1",
+  "edu.holycross.shot" %% "citeobj" % "7.2.0",
+  "edu.holycross.shot" %% "citerelations" % "2.4.0",
   "edu.holycross.shot" %% "citeiip" % "1.0.0",
-  "org.homermultitext" %% "hmt-textmodel" % "1.3.0"
+  "org.homermultitext" %% "hmt-textmodel" % "4.1.0"
 
 )
