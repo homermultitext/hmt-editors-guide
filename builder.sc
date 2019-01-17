@@ -41,6 +41,9 @@ object GuideBuilder {
   }
 
 
+  // Look for thesd and expand;
+// \(urn.*\)
+
   // Stitch together text contents from markdown source
   def stitch:String  = {
     val txt = for (t <- toc) yield {
