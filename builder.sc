@@ -29,26 +29,26 @@ case class Example(
 object GuideBuilder {
 
 
-  // Write guide to file
-  def writeGuide: Unit = {
-    val guide = "generated/guide.md"
+  // Write guide to file `guide`
+  def writeGuide(guide : String =  "generated/guide.md"): Unit = {
     new PrintWriter(guide) { write(stitch); close }
   }
 
-  // Stitch together text contents
-  def stitch:String  = {
+  // table of contents for composite:
+  // an ordered list of markdown file names
+  def toc = {
+    Source.fromFile("markdown/toc.txt").getLines.toVector
+  }
 
+
+  // Stitch together text contents from markdown source
+  def stitch:String  = {
     val txt = for (t <- toc) yield {
       val f = s"markdown/${t}"
       println(f)
       Source.fromFile(f).getLines.toVector.mkString("\n")
     }
     txt.mkString("\n\n")
-  }
-
-  // table of contents for composite markdown
-  def toc = {
-    Source.fromFile("markdown/toc.txt").getLines.toVector
   }
 
   // get example data in row by column vectors
@@ -84,5 +84,9 @@ object GuideBuilder {
       Example(Cite2Urn(cols(0)), Cite2Urn(cols(1)),CtsUrn(cols(2)),cols(3),
       cols(4),cols(5)))
   }
-
 }
+
+println("\n\nTo format a new guide:")
+println("\tGuideBuilder.writeGuide()")
+
+println("\nResults will be written to generated/guide.m")

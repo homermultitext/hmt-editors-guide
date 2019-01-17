@@ -20,7 +20,11 @@ To generate a new composite markdown file, start an `sbt console`, and from the 
 
 
 
+## Organization of files
 
+
+- `toc.txt` is an ordered list of names of files in markdown
+-  
 ## Earlier versions
 
 -   The 2014 version is available on the web [here](http://homermultitext.github.io/hmt-editors-guide/editorial-policies/)

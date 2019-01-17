@@ -4,12 +4,20 @@
 
 This document describes the HMT project's use of TEI XML in the summer of 2017.
 
+
 All citable texts in the HMT project follow the OHCO2 model:  citable units are organized in an ordered hierarchy of citation units.  We use familiar TEI elements to represent the citation hierarchy: citable nodes are either `l` for lines of poetic text, or `p` for paragraph units of prose, with higher parts of the hierarchy (such as books of the *Iliad*) represented by TEI `div` elements.  Each element corresponding to a level of the citation hierarchy has an `@n` attribute giving identifying value for that part of the text.  *Iliad* 10.1, for example, would be contained in a `div` element with `@n` attribute of `10`, and a `l` element with a value of `1`.
 
 If the text of a scholion explicitly organizes material in a table or list structure, we use TEI `list` with `item` elements.  These are the only TEI elements we need to capture the basic structure of our diplomatic editions.
 
 
->Example:  see an example of a [list structure in a scholion](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA102VN-0605@0.168,0.1306,0.25,0.1779). Items can be numbered (if they are numbered in the text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+>Example:  see an example of a [list structure in a scholion](http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA315VN-0817@0.157,0.1772,0.281,0.0713). Items can be numbered (if they are numbered in the text) by adding the attribute `@type="ordered"` to the list element and the `item` elements can take an `@n` attribute to indicate the sequence.
+
+    <list>
+     <item>πέπλος· ὅν περονῶνται γυναῖκες· ὃς καὶ εανὸς καλεῖται:</item>`
+     <item>χιτών ἀνδρεῖον ἔνδυμα</item>
+     <item>φᾶρος ϊματιον ἀνδρῶν και γυναικῶν·</item>
+     <item>χλαίνη τὸ περίβλημα τῆς κλίνης:</item>
+    </list>
 
 
 The focus of this document is our usage of TEI markup *within* those citable nodes, that is, how we document the contents of our citable nodes.  The order of sections describes our markup practice from "inside to out":  when elements co-occur, the element described first in this document (and so, innermost) will be wrapped by the element described later (outermost).  The major sections are:
@@ -274,7 +282,17 @@ Example:
 
 [102]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA115RN-0287@0.233,0.7521,0.453,0.027
 
+The scribe may also delete a letter or letters within a word. Like `add`, you also need to wrap the whole word in `w` to tokenize it properly. 
 
+[![deletion2][deletion2]][500]
+
+Example:
+
+`<w>κα<del>λ</del>λεῖν</w>`
+
+[deletion2]: http://www.homermultitext.org/iipsrv?OBJ=IIP,1.0&FIF=/project/homer/pyramidal/VenA/VA316VN-0818.tif&RGN=0.2936,0.5813,0.037,0.0139&WID=8000&CVT=JPEG
+
+[500]: http://www.homermultitext.org/hmt-digital/images?request=GetIIPMooViewer&urn=urn:cite:hmt:vaimg.VA316VN-0818@0.2936,0.5813,0.037,0.0139
 
 
 ## Scribal Corrections
