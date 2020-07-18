@@ -3,7 +3,7 @@ remote_theme: pmarsceill/just-the-docs
 aux_links:
 
   "HMT home page":
-    - "http://www.homermultitext.org/""
+    - "http://www.homermultitext.org/"
   "Editors' guide on github":
     - "https://github.com/homermultitext/hmt-editors-guide"
 
