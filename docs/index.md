@@ -1,5 +1,5 @@
 ---
-title: "Editors' guide"
+title: "Guide"
 layout: page
 ---
 
