@@ -5,7 +5,7 @@ aux_links:
   "HMT home page":
     - "http://www.homermultitext.org/""
   "Editors' guide on github":
-        - "//github.com/homermultitext/hmt-editors-guide"
+    - "https://github.com/homermultitext/hmt-editors-guide"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
