@@ -18,3 +18,13 @@ This is an in-progress draft in summer, 2023, of the HMT project's guide for edi
 ## Preparation
 
 Please follow the instructions on  [this page](./tech/) to install the software we use. 
+
+
+## Dashboards hosted on `homermultitext.org`
+
+
+- Search HMT [authority lists](https://www.homermultitext.org/authlists/)
+- Find [MS pages by *Iliad* reference](https://www.homermultitext.org/iliad-browser/)
+- [Alphabetic search](https://www.homermultitext.org/alpha-search/) of edited texts
+- [Codex browser](https://www.homermultitext.org/codex-browser/)
+- Image [lightbox](https://www.homermultitext.org/lightbox/)
