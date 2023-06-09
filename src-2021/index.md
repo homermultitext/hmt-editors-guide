@@ -1,11 +1,11 @@
 ---
-title: "HMT project: editor's guide"
+title: HMT Summer Experience 2021
 layout: page
 nav_order: 0
 ---
 
 
-# Homer Multitext project: editor's guide
+# Homer Multitext project: summer experience 2021
 
 Dates: June 28 - July 9, inclusive
 
