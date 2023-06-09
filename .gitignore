@@ -2,3 +2,5 @@ docs/Gemfile
 *~
 .vscode/
 docs/_site/
+Gemfile.lock
+.jekyll-cache/
