@@ -110,7 +110,7 @@ Named entities with `@n` attribute with URN value:
 
 ### Indexing *scholion* markers
 
-We record the occurrence of each footnote-like marker in the *Iliad* text in a delimited-text table with five columns.  You'll find an example in the `scholionmarkers.cex` file of your repository's `collections` directory.  The five columns are:
+Manuscripts like the Venetus B mark the presence of notes with numeric markers like modern footnotes. We record the occurrence of each mumeric marker in the *Iliad* text in a delimited-text table with five columns.  You'll find an example in the `scholionmarkers.cex` file of your repository's `collections` directory.  The five columns are:
 
 #### 1. Identify the marker
 
@@ -140,4 +140,6 @@ The final column should give the URN for the *Iliad* line the marker is attached
 
 ### Indexing hyphens
 
-TBA
+Hyphens (the ὑφ' ἕν) are used to indicate that the marked text is taken together (e.g., as a single word). We record the presence of hyphens in delimtited-text files.
+
+> Instructions TBA.
