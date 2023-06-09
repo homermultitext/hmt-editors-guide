@@ -9,18 +9,9 @@ has_children: true
 # References for editors
 
 
-## Previous editions
+## Examples of URNs
 
-
-- Dindorf:  [vol. 1 of his edition of Venetus B scholia](http://www.homermultitext.org/pd-pdfs/Dindorf-v3.pdf) (pdf)
-- text of limited [selection of *scholia* by Erbse](./wh-iliad4.html) (ca. 80% of Venetus A scholia; probably less for Venetus B. Text from WordHoard project: note that Erbse's critical apparatus is not included).  For help reading the format of Erbse's text, see [this guide](./erbse-key/)
-
-## *Iliad* 4
-
-- a ["low-friction" reader](https://www.inusum.com/homer/iliad/4/) (from Furman University, thanks, Randall Childress!)
-
-
-## URNs
+Be sure you can distinguish among URNs for text passages, manuscript pages, and images.
 
 - *Iliad* text
     - Venetus B: `urn:cts:greekLit:tlg0012.tlg001.msB:`
@@ -30,10 +21,9 @@ has_children: true
     - Venetus B: `urn:cite2:hmt:msB.v1:`
 
 
-Finding other URNs:
 
-- [HMT URN search](https://interwing.nl/hmt/urn/) (from Leiden team member Mees Gelein)
-- request URNs for new personal names, place names, etc using forms on the [`hmt-authlists` repository](https://github.com/homermultitext/hmt-authlists)
+
+> Request URNs for new personal names, place names, etc using forms on the [`hmt-authlists` repository](https://github.com/homermultitext/hmt-authlists)
 
 
 ## XML usage
