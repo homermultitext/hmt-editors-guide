@@ -11,7 +11,9 @@ nav_order: 0
 
 ## Overview
 
-This is an in-progress draft in summer, 2023, of the HMT project's guide for editors.  It is derived from the website we used for our[on-line summer experience in 2021](https://homermultitext.github.io/hmt-se2021/).
+This is an in-progress draft in summer, 2023, of the HMT project's guide for editors.  It is derived from the website we used for our [on-line summer experience in 2021](https://homermultitext.github.io/hmt-se2021/).
+
+> Help us improve it by submitting corrections and suggestions on the [project issue tracker](https://github.com/homermultitext/hmt-editors-guide/issues).
 
 ## Preparation
 
